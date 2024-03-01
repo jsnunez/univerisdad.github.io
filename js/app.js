@@ -4,4 +4,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     loadTarifas();
     loadDepartamentos();
     loadSalones();
+    loadEstudiantes();
+    loadProfesores();
+    loadPeriodos();
+    loadCursoas();
+    loadAsignaturas();
+ 
+    irAsignaturas();
+
 })
