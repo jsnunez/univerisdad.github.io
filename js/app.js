@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     loadCursoas();
     loadAsignaturas();
  
-    irAsignaturas();
+  
 
 })

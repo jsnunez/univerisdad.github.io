@@ -248,5 +248,8 @@ const irAsignaturas = () => {
 
   matriculaInput.style.display = 'none';
   
-
+  cargarProAsig();
+  cargarProfeAsig();
+  cargarCursosAsig();
+  cargarSalonAsig();
 }
