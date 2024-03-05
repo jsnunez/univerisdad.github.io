@@ -12,392 +12,590 @@
 
 <body>
     <header>
-    <div id="nav">
+        <div id="nav">
+
+        </div>
+    </header>    
+
+      <div id="incio">
+       
+    </div>
+    <div id="portada">
+        <img id="portadaimg"src="img/portada.jpg" >
 
     </div>
-</header>
-<div class="container">
-    <div id="periodos">
+    <div id="imagenPortada">
 
     </div>
-    <div id="programas">
+    <div class="container">
+  
 
-    </div>
+        <div id="periodos">
 
-    <div id="tarifas">
-        tarifas
-    </div>
+        </div>
+        <div id="programas">
 
-    <div id="departamentos">
-        departamentos
-    </div>
+        </div>
 
-    <div id="salones">
-        salones
-    </div>
+        <div id="tarifas">
+            tarifas
+        </div>
 
-    <div id="estudiantes">
-        <section class="h-100 bg-dark">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col">
-                        <div class="card card-registration my-4">
-                            <div class="row g-0">
-                                <div class="col-xl-6 d-none d-xl-block">
-                                    <img src="img/alumnos.jpg"
-                                        alt="Sample photo" class="img-fluid"
-                                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="card-body p-md-5 text-black">
-                                        <h3 class="mb-5 text-uppercase">Formulario inscripcion estudiante</h3>
+        <div id="departamentos">
+            departamentos
+        </div>
 
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <input type="text" id="nombreEstudiante"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Example1m">Nombre</label>
+        <div id="salones">
+            salones
+        </div>
+
+        <div id="estudiantesR">
+            
+        </div>
+        <div id="docentesR">
+            
+        </div>
+        <div id="estudiantes">
+            <section class="h-100 bg-dark">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col">
+                            <div class="card card-registration my-4">
+                                <div class="row g-0">
+                                    <div class="col-xl-6 d-none d-xl-block">
+                                        <img src="img/alumnos.jpg" alt="Sample photo" class="img-fluid"
+                                            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="card-body p-md-5 text-black">
+                                            <h3 class="mb-5 text-uppercase">Formulario inscripcion estudiante</h3>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="nombreEstudiante"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="form3Example1m">Nombre</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="apellidoEstudiante"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label"
+                                                            for="apellidoEstudiante">Apellido</label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <input type="text" id="apellidoEstudiante"
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="tipoIdentificacion">tipo de
+                                                        identificacion</label>
+                                                    <select class="select" id="tipoIdentificacion">
+                                                        <option value="CC">CC</option>
+                                                        <option value="CE">CE</option>
+                                                        <option value="TI">TI</option>
+                                                        <option value="RC">RC</option>
+                                                    </select>
+
+
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="number" id="numIdenti"
                                                         class="form-control form-control-lg" />
-                                                    <label class="form-label" for="apellidoEstudiante">Apellido</label>
+                                                    <label class="form-label" for="apellidoEstudiante">Numero de
+                                                        identificacion</label>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="text" id="ciudad"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example8">Ciudad de
+                                                        residencia</label>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="text" id="direccion"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="direccion">Direccion</label>
+                                                </div>
+                                            </div>
 
-                                                <label class="form-label" for="tipoIdentificacion">tipo de
-                                                    identificacion</label>
-                                                <select class="select" id="tipoIdentificacion">
-                                                    <option value="CC">CC</option>
-                                                    <option value="CE">CE</option>
-                                                    <option value="TI">TI</option>
-                                                    <option value="RC">RC</option>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="number" id="telefono"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="telefono">Telefono</label>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="date" id="fechanacimiento"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="fechanacimiento">fecha de
+                                                        nacimiento</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                                                <h6 class="mb-0 me-4">Genero: </h6>
+
+                                                <select class="select" id="genero">
+                                                    <option value="Masculino">Masculino</option>
+                                                    <option value="Femenino">Femenino</option>
+                                                    <option value="Otro">Otro</option>
                                                 </select>
 
-
                                             </div>
-                                            <div class="col-md-6 mb-4">
-                                                <input type="number" id="numIdenti" class="form-control form-control-lg" />
-                                                <label class="form-label" for="apellidoEstudiante">Numero de
-                                                    identificacion</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-                                                <input type="text" id="ciudad"
-                                                    class="form-control form-control-lg" />
-                                                <label class="form-label" for="form3Example8">Ciudad de
-                                                    residencia</label>
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                                <input type="text" id="direccion"
-                                                    class="form-control form-control-lg" />
-                                                <label class="form-label" for="direccion">Direccion</label>
-                                            </div>
-                                        </div>
-                                   
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <input type="number" id="telefono"
-                                                class="form-control form-control-lg" />
-                                            <label class="form-label" for="telefono">Telefono</label>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <input type="date" id="fechanacimiento"
-                                                class="form-control form-control-lg" />
-                                            <label class="form-label" for="fechanacimiento">fecha de nacimiento</label>
-                                        </div>
-                                    </div>
-                                        <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
 
-                                            <h6 class="mb-0 me-4">Genero: </h6>
 
-                                            <select class="select" id="genero">
-                                                <option value="Masculino">Masculino</option>
-                                                <option value="Femenino">Femenino</option>
-                                                <option value="Otro">Otro</option>
-                                            </select>
+                                            <div class="form-outline mb-4">
 
-                                        </div>
+                                                <label class="form-label" for="programaId">Programa ID</label>
+                                                <select class="select" id="programaID">
 
-                                        
-                                        <div  class="form-outline mb-4">
-                                          
-                                            <label class="form-label" for="programaId">Programa ID</label>
-                                            <select class="select" id="programaID">
-                                             
-                                            </select>
-                                        </div>
-
-                                        <div class="d-flex justify-content-end pt-3">
-                                            <button type="button" class="btn btn-light btn-lg">limpiar todo</button>
-                                            <button type="button" class="btn btn-warning btn-lg ms-2" onclick=enviarDatosEstudiante()>enviar datos</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div id="docentes">
-        <section class="h-100 bg-dark">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col">
-                        <div class="card card-registration my-4">
-                            <div class="row g-0">
-                                <div class="col-xl-6 d-none d-xl-block">
-                                    <img src="img/profesor.jpg"
-                                        alt="Sample photo" class="img-fluid"
-                                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="card-body p-md-5 text-black">
-                                        <h3 class="mb-5 text-uppercase">Formulario inscripcion Docente</h3>
-
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <input type="text" id="nombreProfesor"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="nombreprofesor">Nombre</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <input type="text" id="apellidoProfesor"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="apellidoProfesor">Apellido</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-
-                                                <label class="form-label" for="tipoIdentificacionP">tipo de
-                                                    identificacion</label>
-                                                <select class="select" id="tipoIdentificacionP">
-                                                    <option value="CC">CC</option>
-                                                    <option value="CE">CE</option>
-                                                    <option value="TI">TI</option>
-                                                    <option value="RC">RC</option>
                                                 </select>
-
-
                                             </div>
-                                            <div class="col-md-6 mb-4">
-                                                <input type="number" id="numIdentiP" class="form-control form-control-lg" />
-                                                <label class="form-label" for="numIdentiP">Numero de
-                                                    identificacion</label>
+
+                                            <div class="d-flex justify-content-end pt-3">
+                                                <button type="button" class="btn btn-light btn-lg">limpiar todo</button>
+                                                <button type="button" class="btn btn-warning btn-lg ms-2"
+                                                    onclick=enviarDatosEstudiante()>enviar datos</button>
                                             </div>
-                                        </div>
-                                   
 
-                                        
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label" for="departamentoId">Departamento ID</label>
-                                            <select class="select" id="departamentoID">
-                                             
-                                            </select>
                                         </div>
-
-                                        <div class="d-flex justify-content-end pt-3">
-                                            <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                                            <button type="button" class="btn btn-warning btn-lg ms-2"onclick=enviarDatosProfesor()>Submit
-                                                form</button>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <div id="asignatura">
-        <section class="h-100 bg-dark">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col">
-                        <div class="card card-registration my-4">
-                            <div class="row g-0">
-                                <div class="col-xl-6 d-none d-xl-block">
-                                    <img src="img/materias.png"
-                                        alt="Sample photo" class="img-fluid"
-                                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="card-body p-md-5 text-black">
-                                        <h3 class="mb-5 text-uppercase">Formulario inscripcion asignatura</h3>
+            </section>
+        </div>
+        <div id="docentes">
+            <section class="h-100 bg-dark">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col">
+                            <div class="card card-registration my-4">
+                                <div class="row g-0">
+                                    <div class="col-xl-6 d-none d-xl-block" id="imagenDocente">
+                                        <img src="img/profesor.jpg" alt="Sample photo" class="img-fluid"
+                                            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="card-body p-md-5 text-black">
+                                            <h3 class="mb-5 text-uppercase">Formulario inscripcion Docente</h3>
 
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <input type="text" id="codigoUnico"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="codigoUnico">Codigo unico</label>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="nombreProfesor"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="nombreprofesor">Nombre</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="apellidoProfesor"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label"
+                                                            for="apellidoProfesor">Apellido</label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <input type="number" id="creditos"
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="tipoIdentificacionP">tipo de
+                                                        identificacion</label>
+                                                    <select class="select" id="tipoIdentificacionP">
+                                                        <option value="CC">CC</option>
+                                                        <option value="CE">CE</option>
+                                                        <option value="TI">TI</option>
+                                                        <option value="RC">RC</option>
+                                                    </select>
+
+
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="number" id="numIdentiP"
                                                         class="form-control form-control-lg" />
-                                                    <label class="form-label" for="creditos">creditos</label>
+                                                    <label class="form-label" for="numIdentiP">Numero de
+                                                        identificacion</label>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-
-                                                <label class="form-label" for="profesores">
-                                                    profesor</label>
-                                                <select class="select" id="profesores">
-
-                                                </select>
 
 
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                                <input type="number" id="cupos" class="form-control form-control-lg" />
-                                                <label class="form-label" for="cupos">cupos disponibles</label>
-                                            </div>
-                                        </div>
-                                   
 
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-
-                                                <label class="form-label" for="ProgramaIdA">Programa ID</label>
-                                                <select class="select" id="ProgramaIdA">
-
-                                                </select>
-
-
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                               
-                                                <label class="form-label" for="cursoId">Curso ID</label>
-                                                <select class="select" id="cursoId">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="departamentoId">Departamento ID</label>
+                                                <select class="select" id="departamentoID">
 
                                                 </select>
                                             </div>
+
+                                            <div class="d-flex justify-content-end pt-3">
+                                                <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                                                <button type="button" class="btn btn-warning btn-lg ms-2"
+                                                    onclick=enviarDatosProfesor()>Submit
+                                                    form</button>
+                                            </div>
+
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-4 mb-4">
-                                               
-                                                <label class="form-label" for="dias1">Dia</label>
-                                                <select id="dias1" name="dias">
-                                                    <option value="lunes">Lunes</option>
-                                                    <option value="martes">Martes</option>
-                                                    <option value="miércoles">Miércoles</option>
-                                                    <option value="jueves">Jueves</option>
-                                                    <option value="viernes">Viernes</option>
-                                                    <option value="sábado">Sábado</option>
-                                                    <option value="domingo">Domingo</option>
-                                                </select>
-
-                                              
-
-
-                                            </div>
-                                            <div class="col-md-4 mb-4 ">
-                                               
-                                                <label class="form-label" for="HoraInicio1">Hora inicio</label>
-                                              
-                                                    <input type="time" id="HoraInicio1" class="form-control form-control-lg" />
-
-                                            </div>
-                                            <div class="col-md-4 mb-4">
-                                               
-                                                <label class="form-label" for="HoraFin1">Hora fin</label>
-                                               
-                                                    <input type="time" id="HoraFin1" class="form-control form-control-lg" />
-
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 mb-4">
-                                               
-                                                <label class="form-label" for="dias2">Dia</label>
-                                                <select id="dias2" name="dias">
-                                                    <option value="lunes">Lunes</option>
-                                                    <option value="martes">Martes</option>
-                                                    <option value="miércoles">Miércoles</option>
-                                                    <option value="jueves">Jueves</option>
-                                                    <option value="viernes">Viernes</option>
-                                                    <option value="sábado">Sábado</option>
-                                                    <option value="domingo">Domingo</option>
-                                                </select>
-
-                                              
-
-
-                                            </div>
-                                            <div class="col-md-4 mb-4 ">
-                                               
-                                                <label class="form-label" for="HoraInicio2">Hora inicio</label>
-                                              
-                                                    <input type="time" id="HoraInicio2" class="form-control form-control-lg" />
-
-                                            </div>
-                                            <div class="col-md-4 mb-4">
-                                               
-                                                <label class="form-label" for="HoraFin2">Hora fin</label>
-                                               
-                                                    <input type="time" id="HoraFin2" class="form-control form-control-lg" />
-
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12 mb-6">
-                                                <label class="form-label" for="SalonId">Salon ID</label>
-                                                <select class="select" id="SalonId">
-
-                                                </select>
-                                            </div>
-                                        <div class="d-flex justify-content-end pt-3">
-                                            <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                                            <button type="button" class="btn btn-warning btn-lg ms-2"onclick=enviarDatosAsignaturas()>Submit
-                                                form</button>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <div id="asignatura">
+            <section class="h-100 bg-dark">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col">
+                            <div class="card card-registration my-4">
+                                <div class="row g-0">
+                                    <div class="col-xl-6 d-none d-xl-block">
+                                        <img src="img/materias.png" alt="Sample photo" class="img-fluid"
+                                            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="card-body p-md-5 text-black">
+                                            <h3 class="mb-5 text-uppercase">Formulario inscripcion asignatura</h3>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="codigoUnico"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="codigoUnico">Codigo unico</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="number" id="creditos"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="creditos">creditos</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="profesores">
+                                                        profesor</label>
+                                                    <select class="select" id="profesores">
+                                                    </select>
+                                                    <button>ver mas datos</button>
+
+
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="number" id="cupos"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="cupos">cupos disponibles</label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="ProgramaIdA">Programa ID</label>
+                                                    <select class="select" id="ProgramaIdA">
+
+                                                    </select>
+
+
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="cursoId">Curso ID</label>
+                                                    <select class="select" id="cursoId">
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="dias1">Dia</label>
+                                                    <select id="dias1" name="dias">
+                                                        <option value="lunes">Lunes</option>
+                                                        <option value="martes">Martes</option>
+                                                        <option value="miércoles">Miércoles</option>
+                                                        <option value="jueves">Jueves</option>
+                                                        <option value="viernes">Viernes</option>
+                                                        <option value="sábado">Sábado</option>
+                                                        <option value="domingo">Domingo</option>
+                                                    </select>
+
+
+
+
+                                                </div>
+                                                <div class="col-md-4 mb-4 ">
+
+                                                    <label class="form-label" for="HoraInicio1">Hora inicio</label>
+
+                                                    <input type="time" id="HoraInicio1"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="HoraFin1">Hora fin</label>
+
+                                                    <input type="time" id="HoraFin1"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="dias2">Dia</label>
+                                                    <select id="dias2" name="dias">
+                                                        <option value="lunes">Lunes</option>
+                                                        <option value="martes">Martes</option>
+                                                        <option value="miércoles">Miércoles</option>
+                                                        <option value="jueves">Jueves</option>
+                                                        <option value="viernes">Viernes</option>
+                                                        <option value="sábado">Sábado</option>
+                                                        <option value="domingo">Domingo</option>
+                                                    </select>
+
+
+
+
+                                                </div>
+                                                <div class="col-md-4 mb-4 ">
+
+                                                    <label class="form-label" for="HoraInicio2">Hora inicio</label>
+
+                                                    <input type="time" id="HoraInicio2"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="HoraFin2">Hora fin</label>
+
+                                                    <input type="time" id="HoraFin2"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-6">
+                                                    <label class="form-label" for="SalonId">Salon ID</label>
+                                                    <select class="select" id="SalonId">
+
+                                                    </select>
+                                                </div>
+                                                <div class="d-flex justify-content-end pt-3">
+                                                    <button type="button" class="btn btn-light btn-lg">Reset
+                                                        all</button>
+                                                    <button type="button" class="btn btn-warning btn-lg ms-2"
+                                                        onclick=enviarDatosAsignaturas()>Submit
+                                                        form</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <div id="matricula">
+            <section class="h-100 bg-dark">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col">
+                            <div class="card card-registration my-4">
+                                <div class="row g-0">
+                                    <div class="col-xl-6 d-none d-xl-block">
+                                        <img src="img/materias.png" alt="Sample photo" class="img-fluid"
+                                            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="card-body p-md-5 text-black">
+                                            <h3 class="mb-5 text-uppercase">Formulario inscripcion Matriculas</h3>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <label class="form-label" for="codigoUnico">Estudiantes</label>
+
+                                                        <select class="select" id="cargarEstudiantes">
+                                                        </select>
+                                                        <button onclick="verTodosEstu()">ver estudiantes</button>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="number" id="creditos"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="creditos">creditos</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="profesores">
+                                                        profesor</label>
+                                                    <select class="select" id="profesores">
+                                                    </select>
+                                                    <button>ver mas datos</button>
+
+
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <input type="number" id="cupos"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="cupos">cupos disponibles</label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="ProgramaIdA">Programa ID</label>
+                                                    <select class="select" id="ProgramaIdA">
+
+                                                    </select>
+
+
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+
+                                                    <label class="form-label" for="cursoId">Curso ID</label>
+                                                    <select class="select" id="cursoId">
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="dias1">Dia</label>
+                                                    <select id="dias1" name="dias">
+                                                        <option value="lunes">Lunes</option>
+                                                        <option value="martes">Martes</option>
+                                                        <option value="miércoles">Miércoles</option>
+                                                        <option value="jueves">Jueves</option>
+                                                        <option value="viernes">Viernes</option>
+                                                        <option value="sábado">Sábado</option>
+                                                        <option value="domingo">Domingo</option>
+                                                    </select>
+
+
+
+
+                                                </div>
+                                                <div class="col-md-4 mb-4 ">
+
+                                                    <label class="form-label" for="HoraInicio1">Hora inicio</label>
+
+                                                    <input type="time" id="HoraInicio1"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="HoraFin1">Hora fin</label>
+
+                                                    <input type="time" id="HoraFin1"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="dias2">Dia</label>
+                                                    <select id="dias2" name="dias">
+                                                        <option value="lunes">Lunes</option>
+                                                        <option value="martes">Martes</option>
+                                                        <option value="miércoles">Miércoles</option>
+                                                        <option value="jueves">Jueves</option>
+                                                        <option value="viernes">Viernes</option>
+                                                        <option value="sábado">Sábado</option>
+                                                        <option value="domingo">Domingo</option>
+                                                    </select>
+
+
+
+
+                                                </div>
+                                                <div class="col-md-4 mb-4 ">
+
+                                                    <label class="form-label" for="HoraInicio2">Hora inicio</label>
+
+                                                    <input type="time" id="HoraInicio2"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                                <div class="col-md-4 mb-4">
+
+                                                    <label class="form-label" for="HoraFin2">Hora fin</label>
+
+                                                    <input type="time" id="HoraFin2"
+                                                        class="form-control form-control-lg" />
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-6">
+                                                    <label class="form-label" for="SalonId">Salon ID</label>
+                                                    <select class="select" id="SalonId">
+
+                                                    </select>
+                                                </div>
+                                                <div class="d-flex justify-content-end pt-3">
+                                                    <button type="button" class="btn btn-light btn-lg">Reset
+                                                        all</button>
+                                                    <button type="button" class="btn btn-warning btn-lg ms-2"
+                                                        onclick=enviarDatosAsignaturas()>Submit
+                                                        form</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
     </div>
-    <div id="matricula">
-        matricula
+    <div id="regEstudiantes">
     </div>
-</div>
 </body>
 <script src="js/app.js"></script>
+<script src="js/paginaInicio.js"></script>
+
 <script src="js/paginaactual.js"></script>
 <script src="js/programas.js"></script>
 <script src="js/tarifas.js"></script>
 <script src="js/departamentos.js"></script>
 <script src="js/salones.js"></script>
+<script src="js/estudiantesReporte.js"></script>
 <script src="js/estudiantes.js"></script>
 <script src="js/profesores.js"></script>
 <script src="js/periodos.js"></script>
 <script src="js/cursos.js"></script>
 <script src="js/asignatura.js"></script>
-
+<script src="js/matricula.js"></script>
 
 </html>

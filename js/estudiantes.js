@@ -46,7 +46,7 @@ let cantEstudinates=listaEstudiantes.length;
 
 
 let dataNombreE=nombreInput.value;
-console.log(dataNombreE)
+console.log("sebas" +dataNombreE)
 let dataApellidoE=apellidoInput.value;
 let dataTiInput=tiInput.value;
 let dataNumIdenti=numIdentiInput.value;
@@ -55,7 +55,6 @@ let dataCiudad=ciudadInput.value;
 let dataTelefono=telefonoInput.value;
 let dataGenero=generoInput.value;
 let dataFechanacimiento=fechanacimientoInput.value;
-
 let dataProgramaId=programaIdInput.value;
 
 
@@ -96,5 +95,20 @@ const guardarEstudiante= async(nuevoEstudiante)=>{
     }catch(error){
         console.error("Error al cargar producto",error.message);
     }
+
+}
+
+const generarOptionsEstudiantes=()=>{
+    let options='';
+    numEstudiantes=listaEstudiantes.length;
+    console.log(numEstudiantes);
+    for(const estudiantes of listaEstudiantes){
+        console.log(estudiantes)
+        options+=`<tr>`
+        options+=`<td>${estudiantes.id}</td> <td>${estudiantes.nombre}</td> `;
+        options+=`</tr>`
+    }
+    console.log(options)
+    return options;
 
 }

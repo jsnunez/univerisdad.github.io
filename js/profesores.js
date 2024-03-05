@@ -55,29 +55,83 @@ const enviarDatosProfesor=()=>{
         departamento_id: dataDepatamnetoId
     };
     guardarProfesor(nuevoProfesor)
-    
     }
     const guardarProfesor= async(nuevoProfesor)=>{
         try{
-    
+           
+
             const respuesta=await fetch('http://localhost:3000/profesores',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
                 },
                 body: JSON.stringify(nuevoProfesor),
+                
             });
-    
+
             if(!respuesta.ok){
                throw new Error('Error al crear el producto. Estado: ',respuesta.status);
             }
             const profesorCreado=await respuesta.json();
-            
+           
             console.log('producto creado:', profesorCreado);
             alert("se ingreso un nuevo Profesor")
+            
         }catch(error){
             console.error("Error al cargar producto",error.message);
         }
-    
+
+    }
+
+    const datosProf=()=>{
+        let profesoresInput=document.getElementById("profesores");
+        let profselec=profesoresInput.value
+
     }
     
+
+    
+const cargarDocentesR= ()=>{
+    const docentesRInput = document.getElementById('docentesR');
+
+
+    docentesRInput.innerHTML = `
+    <div class="table-responsive">
+    <table  class="table">
+      <thead>
+            <tr>
+            <th><h2>id</th>
+            <th><h2>nombre</th>
+            <th><h2>apellido</th>
+            <th><h2>tipo de documento</th>
+
+            <th><h2>numero de documento</th>
+            <th><h2>departamento id</th>
+            </tr>
+        </thead>
+        <tbody id="tablaDepartamentocion">
+        
+        ${generarOptionsDocentesR()}
+ 
+        </tbody>
+       
+
+       
+    </table>
+    </div>  `
+    
+}
+
+
+const generarOptionsDocentesR=()=>{
+    let options='';
+    for(const profesoresR of listaProfesores){
+        options+=`<tr>`
+        options+=`<td>${profesoresR.id}</td> <td>${profesoresR.nombre}</td>
+        <td>${profesoresR.apellido}</td> <td>${profesoresR.tipo_documento}</td>
+        <td>${profesoresR.numero_documento}</td> <td>${profesoresR.departamento_id}</td>`;
+        options+=`</tr>`
+    }
+    return options;
+
+}

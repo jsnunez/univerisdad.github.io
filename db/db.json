@@ -2,6 +2,12 @@
   "periodos": [
     {
       "id": "1",
+      "codigo": "P23-02",
+      "ano": 2023,
+      "semestre": 2
+    },
+    {
+      "id": "2",
       "codigo": "P24-01",
       "ano": 2024,
       "semestre": 1
@@ -15,7 +21,47 @@
     },
     {
       "id": "2",
-      "nombre": "Ingeniería de Mecatronica",
+      "nombre": "Ingeniería Civil ",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "3",
+      "nombre": "Ingeniería Ambiental",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "4",
+      "nombre": "Ingeniería Electrónica",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "5",
+      "nombre": "Ingeniería Industrial",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "6",
+      "nombre": "Licenciatura en Música",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "7",
+      "nombre": "Ingeniría Electromecánica",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "8",
+      "nombre": "Adminstracíon de Empresas",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "9",
+      "nombre": "Contaduría Pública",
+      "nivel": "Pregrado"
+    },
+    {
+      "id": "10",
+      "nombre": "Profesional en Cultura Fisica",
       "nivel": "Pregrado"
     }
   ],
@@ -31,6 +77,114 @@
       "costo_credito": 1100,
       "periodo_id": 1,
       "programa_id": 2
+    },
+    {
+      "id": "3",
+      "costo_credito": 1200,
+      "periodo_id": 1,
+      "programa_id": 3
+    },
+    {
+      "id": "4",
+      "costo_credito": 1300,
+      "periodo_id": 1,
+      "programa_id": 4
+    },
+    {
+      "id": "5",
+      "costo_credito": 1400,
+      "periodo_id": 1,
+      "programa_id": 5
+    },
+    {
+      "id": "6",
+      "costo_credito": 1500,
+      "periodo_id": 1,
+      "programa_id": 6
+    },
+    {
+      "id": "7",
+      "costo_credito": 1600,
+      "periodo_id": 1,
+      "programa_id": 7
+    },
+    {
+      "id": "8",
+      "costo_credito": 1700,
+      "periodo_id": 1,
+      "programa_id": 8
+    },
+    {
+      "id": "9",
+      "costo_credito": 1800,
+      "periodo_id": 1,
+      "programa_id": 9
+    },
+    {
+      "id": "10",
+      "costo_credito": 1900,
+      "periodo_id": 1,
+      "programa_id": 10
+    },
+    {
+      "id": "11",
+      "costo_credito": 1200,
+      "periodo_id": 2,
+      "programa_id": 1
+    },
+    {
+      "id": "12",
+      "costo_credito": 1400,
+      "periodo_id": 2,
+      "programa_id": 2
+    },
+    {
+      "id": "13",
+      "costo_credito": 1600,
+      "periodo_id": 2,
+      "programa_id": 3
+    },
+    {
+      "id": "14",
+      "costo_credito": 1800,
+      "periodo_id": 2,
+      "programa_id": 4
+    },
+    {
+      "id": "15",
+      "costo_credito": 2000,
+      "periodo_id": 2,
+      "programa_id": 5
+    },
+    {
+      "id": "16",
+      "costo_credito": 2200,
+      "periodo_id": 2,
+      "programa_id": 6
+    },
+    {
+      "id": "17",
+      "costo_credito": 2000,
+      "periodo_id": 2,
+      "programa_id": 7
+    },
+    {
+      "id": "18",
+      "costo_credito": 2000,
+      "periodo_id": 2,
+      "programa_id": 8
+    },
+    {
+      "id": "19",
+      "costo_credito": 2200,
+      "periodo_id": 2,
+      "programa_id": 9
+    },
+    {
+      "id": "20",
+      "costo_credito": 2100,
+      "periodo_id": 2,
+      "programa_id": 10
     }
   ],
   "departamentos": [
@@ -44,14 +198,22 @@
     },
     {
       "id": "3",
-      "nombre": "Departamento de Mecanica"
+      "nombre": "Departamento de Fisica"
+    },
+    {
+      "id": "4",
+      "nombre": "Departamento de Diseño"
+    },
+    {
+      "id": "5",
+      "nombre": "Departamento de Ciencias Humanas"
     }
   ],
   "profesores": [
     {
       "id": "1",
       "tipo_documento": "CC",
-      "numero_documetno": "13788555",
+      "numero_documento": "13788555",
       "nombre": "Juan",
       "apellido": "Pérez",
       "departamento_id": 1
@@ -59,7 +221,7 @@
     {
       "id": "2",
       "tipo_documento": "CC",
-      "numero_documetno": "137880000",
+      "numero_documento": "137880000",
       "nombre": "María",
       "apellido": "Gómez",
       "departamento_id": 2
@@ -68,20 +230,332 @@
       "id": "3",
       "tipo_documento": "CC",
       "numero_documento": "312321321",
-      "nombre": "carlos",
-      "apellido": "nieto",
+      "nombre": "Carlos",
+      "apellido": "Nieto",
+      "departamento_id": 3
+    },
+    {
+      "id": "4",
+      "tipo_documento": "CC",
+      "numero_documento": "22558899",
+      "nombre": "Ana",
+      "apellido": "López",
+      "departamento_id": 4
+    },
+    {
+      "id": "5",
+      "tipo_documento": "CC",
+      "numero_documento": "11223344",
+      "nombre": "Pedro",
+      "apellido": "Martínez",
+      "departamento_id": 5
+    },
+    {
+      "id": "6",
+      "tipo_documento": "CC",
+      "numero_documento": "99887766",
+      "nombre": "Luisa",
+      "apellido": "Hernández",
+      "departamento_id": 1
+    },
+    {
+      "id": "7",
+      "tipo_documento": "CC",
+      "numero_documento": "66778899",
+      "nombre": "Andrés",
+      "apellido": "Suárez",
+      "departamento_id": 2
+    },
+    {
+      "id": "8",
+      "tipo_documento": "CC",
+      "numero_documento": "44556677",
+      "nombre": "Laura",
+      "apellido": "Díaz",
+      "departamento_id": 3
+    },
+    {
+      "id": "9",
+      "tipo_documento": "CC",
+      "numero_documento": "33221100",
+      "nombre": "Javier",
+      "apellido": "Ramos",
+      "departamento_id": 4
+    },
+    {
+      "id": "10",
+      "tipo_documento": "CC",
+      "numero_documento": "99001122",
+      "nombre": "Sofía",
+      "apellido": "García",
+      "departamento_id": 5
+    },
+    {
+      "id": "11",
+      "tipo_documento": "CC",
+      "numero_documento": "11223344",
+      "nombre": "Marcela",
+      "apellido": "Sánchez",
+      "departamento_id": 1
+    },
+    {
+      "id": "12",
+      "tipo_documento": "CC",
+      "numero_documento": "44556677",
+      "nombre": "Diego",
+      "apellido": "Vargas",
+      "departamento_id": 2
+    },
+    {
+      "id": "13",
+      "tipo_documento": "CC",
+      "numero_documento": "66778899",
+      "nombre": "Valeria",
+      "apellido": "Pineda",
+      "departamento_id": 3
+    },
+    {
+      "id": "14",
+      "tipo_documento": "CC",
+      "numero_documento": "99887766",
+      "nombre": "Miguel",
+      "apellido": "Gutiérrez",
+      "departamento_id": 4
+    },
+    {
+      "id": "15",
+      "tipo_documento": "CC",
+      "numero_documento": "33221100",
+      "nombre": "Natalia",
+      "apellido": "Luna",
+      "departamento_id": 5
+    },
+    {
+      "id": "16",
+      "tipo_documento": "CC",
+      "numero_documento": "99001122",
+      "nombre": "Gabriel",
+      "apellido": "Herrera",
+      "departamento_id": 1
+    },
+    {
+      "id": "17",
+      "tipo_documento": "CC",
+      "numero_documento": "11223344",
+      "nombre": "Camila",
+      "apellido": "Ramírez",
+      "departamento_id": 2
+    },
+    {
+      "id": "18",
+      "tipo_documento": "CC",
+      "numero_documento": "44556677",
+      "nombre": "Alejandro",
+      "apellido": "Ortiz",
+      "departamento_id": 3
+    },
+    {
+      "id": "19",
+      "tipo_documento": "CC",
+      "numero_documento": "66778899",
+      "nombre": "Paula",
+      "apellido": "Castaño",
+      "departamento_id": 4
+    },
+    {
+      "id": "20",
+      "tipo_documento": "CC",
+      "numero_documento": "99887766",
+      "nombre": "Daniel",
+      "apellido": "Jiménez",
+      "departamento_id": 5
+    },
+    {
+      "id": "21",
+      "tipo_documento": "CC",
+      "numero_documento": "33221100",
+      "nombre": "Luis",
+      "apellido": "Vega",
+      "departamento_id": 1
+    },
+    {
+      "id": "22",
+      "tipo_documento": "CC",
+      "numero_documento": "99001122",
+      "nombre": "Elena",
+      "apellido": "Quintero",
+      "departamento_id": 2
+    },
+    {
+      "id": "23",
+      "tipo_documento": "CC",
+      "numero_documento": "11223344",
+      "nombre": "David",
+      "apellido": "Galindo",
+      "departamento_id": 3
+    },
+    {
+      "id": "24",
+      "tipo_documento": "CC",
+      "numero_documento": "44556677",
+      "nombre": "Carolina",
+      "apellido": "Santana",
+      "departamento_id": 4
+    },
+    {
+      "id": "25",
+      "tipo_documento": "CC",
+      "numero_documento": "66778899",
+      "nombre": "Fernando",
+      "apellido": "Rojas",
+      "departamento_id": 5
+    },
+    {
+      "id": "26",
+      "tipo_documento": "CC",
+      "numero_documento": "99887766",
+      "nombre": "Adriana",
+      "apellido": "Bernal",
+      "departamento_id": 1
+    },
+    {
+      "id": "27",
+      "tipo_documento": "CC",
+      "numero_documento": "33221100",
+      "nombre": "Hugo",
+      "apellido": "Herrera",
+      "departamento_id": 2
+    },
+    {
+      "id": "28",
+      "tipo_documento": "CC",
+      "numero_documento": "99001122",
+      "nombre": "Laura",
+      "apellido": "García",
+      "departamento_id": 3
+    },
+    {
+      "id": "29",
+      "tipo_documento": "CC",
+      "numero_documento": "11223344",
+      "nombre": "Diego",
+      "apellido": "López",
+      "departamento_id": 4
+    },
+    {
+      "id": "30",
+      "tipo_documento": "CC",
+      "numero_documento": "44556677",
+      "nombre": "Sara",
+      "apellido": "Martínez",
+      "departamento_id": 5
+    },
+    {
+      "id": "31",
+      "tipo_documento": "CC",
+      "numero_documento": "43524352435",
+      "nombre": "camilo",
+      "apellido": "otero",
+      "departamento_id": "1"
+    },
+    {
+      "id": "32",
+      "tipo_documento": "CC",
+      "numero_documento": "3154325243",
+      "nombre": "jaime",
+      "apellido": "rodriguez",
       "departamento_id": "3"
     },
     {
-      "id": 4,
+      "id": "33",
+      "tipo_documento": "CC",
+      "numero_documento": "432524352",
+      "nombre": "dfgsdfg",
+      "apellido": "gsdfg",
+      "departamento_id": "1"
+    },
+    {
+      "id": "34",
       "tipo_documento": "CC",
       "numero_documento": "",
       "nombre": "",
       "apellido": "",
-      "departamento_id": ""
+      "departamento_id": "1"
     },
     {
-      "id": 5,
+      "id": "35",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "36",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "37",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "38",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "39",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "40",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "41",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "42",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "nombre": "",
+      "apellido": "",
+      "departamento_id": "1"
+    },
+    {
+      "id": "43",
+      "tipo_documento": "CC",
+      "numero_documento": "2134152512",
+      "nombre": "Carlos",
+      "apellido": "Diaz",
+      "departamento_id": "1"
+    },
+    {
+      "id": 44,
       "tipo_documento": "CC",
       "numero_documento": "",
       "nombre": "",
@@ -118,6 +592,32 @@
     },
     {
       "id": "3",
+      "nombre": "joan sebastina",
+      "apellido": "nuñez serrano",
+      "tipo_documento": "CC",
+      "numero_documento": "1098765289",
+      "ciudad_residencia": "bucaramanga",
+      "direccion": "calle 21#22-37",
+      "telefono": "3044469689",
+      "fecha_nacimiento": "1994-12-03",
+      "sexo": "Masculino",
+      "programa_id": "2"
+    },
+    {
+      "id": "4",
+      "nombre": "joan",
+      "apellido": "nunez",
+      "tipo_documento": "CC",
+      "numero_documento": "1098765289",
+      "ciudad_residencia": "bucaramanga",
+      "direccion": "calle 21#22/37",
+      "telefono": "345423524354325432",
+      "fecha_nacimiento": "1994-12-03",
+      "sexo": "Masculino",
+      "programa_id": "4"
+    },
+    {
+      "id": "5",
       "nombre": "",
       "apellido": "",
       "tipo_documento": "CC",
@@ -130,17 +630,82 @@
       "programa_id": "1"
     },
     {
-      "id": "4",
-      "nombre": "joan sebastina",
-      "apellido": "nuñez serrano",
+      "id": "6",
+      "nombre": "",
+      "apellido": "",
       "tipo_documento": "CC",
-      "numero_documento": "1098765289",
-      "ciudad_residencia": "bucaramanga",
-      "direccion": "calle 21#22-37",
-      "telefono": "3044469689",
-      "fecha_nacimiento": "1994-12-03",
+      "numero_documento": "",
+      "ciudad_residencia": "",
+      "direccion": "",
+      "telefono": "",
+      "fecha_nacimiento": "",
       "sexo": "Masculino",
-      "programa_id": "2"
+      "programa_id": "1"
+    },
+    {
+      "id": "7",
+      "nombre": "",
+      "apellido": "",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "ciudad_residencia": "",
+      "direccion": "",
+      "telefono": "",
+      "fecha_nacimiento": "",
+      "sexo": "Masculino",
+      "programa_id": "1"
+    },
+    {
+      "id": "1",
+      "nombre": "",
+      "apellido": "",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "ciudad_residencia": "",
+      "direccion": "",
+      "telefono": "",
+      "fecha_nacimiento": "",
+      "sexo": "Masculino",
+      "programa_id": ""
+    },
+    {
+      "id": "9",
+      "nombre": "",
+      "apellido": "",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "ciudad_residencia": "",
+      "direccion": "",
+      "telefono": "",
+      "fecha_nacimiento": "",
+      "sexo": "Masculino",
+      "programa_id": "1"
+    },
+    {
+      "id": 10,
+      "nombre": "",
+      "apellido": "",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "ciudad_residencia": "",
+      "direccion": "",
+      "telefono": "",
+      "fecha_nacimiento": "",
+      "sexo": "Masculino",
+      "programa_id": "1"
+    },
+    {
+      "id": 11,
+      "nombre": "sdfsadfsadf",
+      "apellido": "",
+      "tipo_documento": "CC",
+      "numero_documento": "",
+      "ciudad_residencia": "",
+      "direccion": "",
+      "telefono": "",
+      "fecha_nacimiento": "",
+      "sexo": "Masculino",
+      "programa_id": "1"
     }
   ],
   "cursos": [
@@ -148,13 +713,193 @@
       "id": "1",
       "nombre": "Programación Avanzada",
       "codigo": "PROG-AVA",
-      "guia_catedra": "URL_Guia_Catedra.pdf"
+      "guia_catedra": "URL_Guia_CatedraPA.pdf"
     },
     {
       "id": "2",
       "nombre": "Álgebra Lineal",
       "codigo": "ALG-LI",
+      "guia_catedra": "URL_Guia_CatedraAL.pdf"
+    },
+    {
+      "id": "3",
+      "nombre": "Inteligencia Artificial",
+      "codigo": "INT-ART",
+      "guia_catedra": "URL_Guia_CatedraIA.pdf"
+    },
+    {
+      "id": "4",
+      "nombre": "Sistemas Operativos",
+      "codigo": "SIS-OP",
       "guia_catedra": "URL_Guia_Catedra.pdf"
+    },
+    {
+      "id": "3",
+      "nombre": "Inteligencia Artificial",
+      "codigo": "INTEL-AI",
+      "guia_catedra": "URL_Guia_CatedraIA.pdf"
+    },
+    {
+      "id": "4",
+      "nombre": "Cálculo Multivariable",
+      "codigo": "CAL-MUL",
+      "guia_catedra": "URL_Guia_CatedraCM.pdf"
+    },
+    {
+      "id": "5",
+      "nombre": "Desarrollo Web",
+      "codigo": "DES-WEB",
+      "guia_catedra": "URL_Guia_CatedraDW.pdf"
+    },
+    {
+      "id": "6",
+      "nombre": "Bases de Datos",
+      "codigo": "BD",
+      "guia_catedra": "URL_Guia_CatedraBD.pdf"
+    },
+    {
+      "id": "7",
+      "nombre": "Redes de Computadoras",
+      "codigo": "RED-COMP",
+      "guia_catedra": "URL_Guia_CatedraRC.pdf"
+    },
+    {
+      "id": "8",
+      "nombre": "Programación Orientada a Objetos",
+      "codigo": "PROG-OO",
+      "guia_catedra": "URL_Guia_CatedraPOO.pdf"
+    },
+    {
+      "id": "9",
+      "nombre": "Análisis de Algoritmos",
+      "codigo": "ANA-ALG",
+      "guia_catedra": "URL_Guia_CatedraAA.pdf"
+    },
+    {
+      "id": "10",
+      "nombre": "Estadística Avanzada",
+      "codigo": "EST-AVA",
+      "guia_catedra": "URL_Guia_CatedraEA.pdf"
+    },
+    {
+      "id": "11",
+      "nombre": "Ingeniería de Software",
+      "codigo": "ING-SOF",
+      "guia_catedra": "URL_Guia_CatedraIS.pdf"
+    },
+    {
+      "id": "12",
+      "nombre": "Matemáticas Discretas",
+      "codigo": "MAT-DIS",
+      "guia_catedra": "URL_Guia_CatedraMD.pdf"
+    },
+    {
+      "id": "13",
+      "nombre": "Sistemas Operativos",
+      "codigo": "SIS-OP",
+      "guia_catedra": "URL_Guia_CatedraSO.pdf"
+    },
+    {
+      "id": "14",
+      "nombre": "Diseño de Circuitos Digitales",
+      "codigo": "DIS-CIR-DIG",
+      "guia_catedra": "URL_Guia_CatedraDCD.pdf"
+    },
+    {
+      "id": "15",
+      "nombre": "Física Cuántica",
+      "codigo": "FIS-CUA",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "16",
+      "nombre": "Optimización Combinatoria",
+      "codigo": "OPT-COM",
+      "guia_catedra": "URL_Guia_CatedraOC.pdf"
+    },
+    {
+      "id": "17",
+      "nombre": "Lógica Computacional",
+      "codigo": "LOG-COM",
+      "guia_catedra": "URL_Guia_CatedraLC.pdf"
+    },
+    {
+      "id": "18",
+      "nombre": "Diseño de Interfaces de Usuario",
+      "codigo": "DIS-INT-USR",
+      "guia_catedra": "URL_Guia_CatedraDIU.pdf"
+    },
+    {
+      "id": "19",
+      "nombre": "Criptografía",
+      "codigo": "CRI",
+      "guia_catedra": "URL_Guia_CatedraCR.pdf"
+    },
+    {
+      "id": "20",
+      "nombre": "Procesamiento de Imágenes",
+      "codigo": "PROC-IMG",
+      "guia_catedra": "URL_Guia_CatedraPI.pdf"
+    },
+    {
+      "id": "21",
+      "nombre": "Teoría de la Computación",
+      "codigo": "TEO-COM",
+      "guia_catedra": "URL_Guia_CatedraTC.pdf"
+    },
+    {
+      "id": "22",
+      "nombre": "Sistemas Distribuidos",
+      "codigo": "SIS-DIS",
+      "guia_catedra": "URL_Guia_CatedraSD.pdf"
+    },
+    {
+      "id": "23",
+      "nombre": "Introducción a la Robótica",
+      "codigo": "INT-ROB",
+      "guia_catedra": "URL_Guia_CatedraIR.pdf"
+    },
+    {
+      "id": "24",
+      "nombre": "Aprendizaje Automático",
+      "codigo": "APR-AUT",
+      "guia_catedra": "URL_Guia_CatedraAA.pdf"
+    },
+    {
+      "id": "25",
+      "nombre": "Análisis Numérico",
+      "codigo": "ANA-NUM",
+      "guia_catedra": "URL_Guia_CatedraAN.pdf"
+    },
+    {
+      "id": "26",
+      "nombre": "Programación Funcional",
+      "codigo": "PROG-FUN",
+      "guia_catedra": "URL_Guia_CatedraPF.pdf"
+    },
+    {
+      "id": "27",
+      "nombre": "Arquitectura de Computadores",
+      "codigo": "ARQ-COMP",
+      "guia_catedra": "URL_Guia_CatedraAC.pdf"
+    },
+    {
+      "id": "28",
+      "nombre": "Seguridad Informática",
+      "codigo": "SEG-INF",
+      "guia_catedra": "URL_Guia_CatedraSI.pdf"
+    },
+    {
+      "id": "29",
+      "nombre": "Sistemas Embebidos",
+      "codigo": "SIS-EMB",
+      "guia_catedra": "URL_Guia_CatedraSE.pdf"
+    },
+    {
+      "id": "30",
+      "nombre": "Computación Cuántica",
+      "codigo": "COMP-CUA",
+      "guia_catedra": "URL_Guia_CatedraCC.pdf"
     }
   ],
   "salones": [
@@ -163,7 +908,140 @@
       "capacidad_alumnos": 30,
       "edificio": "Edificio A",
       "piso": 2,
-      "numero_identificacion": "S001"
+      "numero_identificacion": "S201"
+    },
+    {
+      "id": "2",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio A",
+      "piso": 2,
+      "numero_identificacion": "S202"
+    },
+    {
+      "id": "3",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio A",
+      "piso": 2,
+      "numero_identificacion": "S203"
+    },
+    {
+      "id": "4",
+      "capacidad_alumnos": 30,
+      "edificio": "Edificio A",
+      "piso": 3,
+      "numero_identificacion": "S301"
+    },
+    {
+      "id": "5",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio A",
+      "piso": 3,
+      "numero_identificacion": "S302"
+    },
+    {
+      "id": "6",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio A",
+      "piso": 3,
+      "numero_identificacion": "S303"
+    },
+    {
+      "id": "7",
+      "capacidad_alumnos": 30,
+      "edificio": "Edificio B",
+      "piso": 2,
+      "numero_identificacion": "S401"
+    },
+    {
+      "id": "8",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 2,
+      "numero_identificacion": "S402"
+    },
+    {
+      "id": "9",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 2,
+      "numero_identificacion": "S403"
+    },
+    {
+      "id": "10",
+      "capacidad_alumnos": 30,
+      "edificio": "Edificio B",
+      "piso": 3,
+      "numero_identificacion": "S501"
+    },
+    {
+      "id": "11",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 3,
+      "numero_identificacion": "S502"
+    },
+    {
+      "id": "12",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 3,
+      "numero_identificacion": "S503"
+    },
+    {
+      "id": "13",
+      "capacidad_alumnos": 30,
+      "edificio": "Edificio B",
+      "piso": 4,
+      "numero_identificacion": "S601"
+    },
+    {
+      "id": "14",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 4,
+      "numero_identificacion": "S602"
+    },
+    {
+      "id": "15",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 4,
+      "numero_identificacion": "S603"
+    },
+    {
+      "id": "16",
+      "capacidad_alumnos": 30,
+      "edificio": "Edificio B",
+      "piso": 5,
+      "numero_identificacion": "S701"
+    },
+    {
+      "id": "17",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 5,
+      "numero_identificacion": "S702"
+    },
+    {
+      "id": "18",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 5,
+      "numero_identificacion": "S703"
+    },
+    {
+      "id": "19",
+      "capacidad_alumnos": 30,
+      "edificio": "Edificio B",
+      "piso": 6,
+      "numero_identificacion": "S801"
+    },
+    {
+      "id": "20",
+      "capacidad_alumnos": 25,
+      "edificio": "Edificio B",
+      "piso": 6,
+      "numero_identificacion": "S802"
     }
   ],
   "asignaturas": [
@@ -214,7 +1092,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "curso_id": "1",
       "codigo": "rgergreg",
       "creditos": "3",
@@ -237,7 +1115,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "curso_id": 1,
       "codigo": "fagadfgadg",
       "creditos": 2,
@@ -260,7 +1138,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "curso_id": 1,
       "codigo": "ererrertgew",
       "creditos": 3,
@@ -283,7 +1161,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "curso_id": 1,
       "codigo": "regergrew",
       "creditos": 33,
@@ -306,7 +1184,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "curso_id": 1,
       "codigo": "",
       "creditos": null,
@@ -329,7 +1207,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "curso_id": 1,
       "codigo": "",
       "creditos": null,
@@ -352,7 +1230,30 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
+      "curso_id": 1,
+      "codigo": "",
+      "creditos": null,
+      "profesor_id": 1,
+      "cupos_disponibles": null,
+      "programa_id": "1",
+      "horario_clases": [
+        {
+          "dia": "lunes",
+          "hora_inicio": "",
+          "hora_fin": "",
+          "salon_id": 1
+        },
+        {
+          "dia": "lunes",
+          "hora_inicio": "",
+          "hora_fin": "",
+          "salon_id": 1
+        }
+      ]
+    },
+    {
+      "id": "10",
       "curso_id": 1,
       "codigo": "",
       "creditos": null,
