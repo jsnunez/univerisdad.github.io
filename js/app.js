@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded',()=>{
     paginaInciciosesion();
+  
     loadProgramas();    
-    // paginaPrincipal();
+//  paginaPrincipal();
     loadTarifas();
     loadDepartamentos();
     loadSalones();
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     loadPeriodos();
     loadCursoas();
     loadAsignaturas();
+  //  irAsignaturas();
  
   
 

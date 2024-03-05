@@ -1,7 +1,6 @@
 const ProgramaIdAInput=document.getElementById('ProgramaIdA');
 const profesorIdAInput=document.getElementById('profesores');
 const cursosIdAInput=document.getElementById('cursoId');
-const salonInput=document.getElementById('SalonId');
 
 
 let listaAsignaturas=[]
@@ -58,14 +57,16 @@ const cargarCursosAsig=()=>{
     cursosIdAInput.innerHTML=options
 }
 const cargarSalonAsig=()=>{
-    
+    const salonInput=document.getElementById('SalonId');
+
     let options='';
     console.log(listaSalones)
     for(const salon of listaSalones){
-        console.log(salon)
+  
  
         options+=`<option value="${salon.id}">${salon.numero_identificacion}</option> `
     }
+    console.log("hola salones")
     salonInput.innerHTML=options
 }
 
@@ -77,14 +78,6 @@ const enviarDatosAsignaturas=()=>{
     let cuposInput=document.getElementById("cupos");
     let ProgramaIdAInput=document.getElementById("ProgramaIdA");
     let cursoIdInput=document.getElementById("cursoId");
-    let dias1Input=document.getElementById("dias1");
-    let HoraInicio1Input=document.getElementById("HoraInicio1");    
-    let HoraFin1Input=document.getElementById("HoraFin1");    
-    let dias2Input=document.getElementById("dias2");
-    let HoraInicio2Input=document.getElementById("HoraInicio2");    
-    let HoraFin2Input=document.getElementById("HoraFin2");
-    let salonInput=document.getElementById("SalonId");
-
     let cantListas=listaAsignaturas.length;
     
     
@@ -94,14 +87,15 @@ const enviarDatosAsignaturas=()=>{
     let datacupos=cuposInput.value;
     let dataProgramaIdA=ProgramaIdAInput.value;
     let datacurso=cursoIdInput.value;
-    let datadias1=dias1Input.value;
-    let dataHoraInicio1=HoraInicio1Input.value;
-    let dataHoraFin1=HoraFin1Input.value;    
-    let datadias2=dias2Input.value;
-    let dataHoraInicio2=HoraInicio2Input.value;
-    let dataHoraFin2=HoraFin2Input.value;
-    let dataSalon=salonInput.value;
-
+    const horarios = [];
+    const horariosInputs = document.querySelectorAll('.horario');
+    horariosInputs.forEach(horarioInput => {
+        const diaSemana = horarioInput.querySelector('.diaSemana').value;
+        const horaInicio = horarioInput.querySelector('.horaInicio').value;
+        const horaFin = horarioInput.querySelector('.horaFin').value;
+        const salonHora = horarioInput.querySelector('.salonHorarioAsignatura').value;
+        horarios.push({ dia: diaSemana, hora_inicio: horaInicio, hora_fin: horaFin, salon_id : salonHora });
+    });
     
     
     const nuevaAsignatura =   {
@@ -112,20 +106,9 @@ const enviarDatosAsignaturas=()=>{
         "profesor_id": parseInt(dataprofesores),
         "cupos_disponibles": parseInt(datacupos),
         "programa_id": dataProgramaIdA,
-        "horario_clases": [
-          {
-            "dia": datadias1,
-            "hora_inicio": dataHoraInicio1,
-            "hora_fin": dataHoraFin1,
-            "salon_id": parseInt(dataSalon)
-          },
-          {
-            "dia": datadias2,
-            "hora_inicio": dataHoraInicio2,
-            "hora_fin": dataHoraFin2,
-            "salon_id": parseInt(dataSalon)
-          }
-        ]
+        "horario_clases": 
+            horarios
+        
       };
     guardarAsignatura(nuevaAsignatura)
     
@@ -153,4 +136,48 @@ const enviarDatosAsignaturas=()=>{
         }
     
     }
+    const agregarHorario = () => {
+
+        const horariosContainer = document.getElementById('horarios');
+        const nuevoHorario = document.createElement('div');
+        nuevoHorario.classList.add('horario');
+        nuevoHorario.innerHTML = `
+            <label for="diaSemana">Día de la Semana:</label>
+            <select class="diaSemana">
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+            </select>
     
+            <label for="horaInicio">Hora de Inicio:</label>
+            <input type="time" class="horaInicio" required>
+    
+            <label for="horaFin">Hora de Finalización:</label>
+            <input type="time" class="horaFin" required>
+    
+            <label for="salonHorarioAsignatura">Salón:</label>
+            <select class="salonHorarioAsignatura" required>
+            ${ salonHorarioPrograma()}
+            </select>`
+        ;
+      
+        horariosContainer.appendChild(nuevoHorario);
+        cargarSalonAsig();
+
+
+    };
+    const salonHorarioPrograma = () => {
+
+        let salonAsignatura = '';
+    
+        for (const salon of listaSalones){
+            salonAsignatura +=  `<option value = ${salon.id}>${salon.numero_identificacion}</options>`
+        }
+    
+        return salonAsignatura
+    
+    }
+
+ 

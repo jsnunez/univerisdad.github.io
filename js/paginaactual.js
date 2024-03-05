@@ -220,7 +220,7 @@ const irAsignaturas = () => {
   cargarProAsig();
   cargarProfeAsig();
   cargarCursosAsig();
-  cargarSalonAsig();
+
 }
 
 const irEstudiantes = () => {
