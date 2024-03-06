@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCursoas();
   loadAsignaturas();
   //  irAsignaturas();
+  if (parseInt(personName) == 1) {
+
   paginaPrincipal();
+}
   if (parseInt(personName) == 2) {
     irProgramas();
   }

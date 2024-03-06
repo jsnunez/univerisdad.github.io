@@ -213,12 +213,7 @@ const ingresarMatricula = () => {
                                     <button onclick="agregarAsignatura()">agregar Asignatura</button>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12 mb-6">
-                                        <label class="form-label" for="SalonId">Salon ID</label>
-                                        <select class="select" id="SalonId">
-
-                                        </select>
-                                    </div>
+                                    
                                     <div class="d-flex justify-content-end pt-3">
                                         <button type="button" class="btn btn-light btn-lg">Reset
                                             all</button>
