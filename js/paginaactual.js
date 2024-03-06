@@ -4,47 +4,13 @@
 
 const paginaPrincipal = () => {
   let logInput=document.getElementById("login-email");
+  sessionStorage.setItem("pagina", 1);
 
 console.log(logInput)
  
 
-  navInput.innerHTML = `
-  <nav>
-  <ul class="primary" >
-    <li>
-      <a><h1>Reportes</h1></a>
-      <ul class="sub">
-        <li><a id="pProgramas" class="listados" onclick=irProgramas()><h2>programas</h2></a></li>
-        <li> <a id="pPeriodos" class="listados" onclick=irperiodos()><h2>periodos</h2></a></li>
-        <li> <a id="PTarifas" class="listados" onclick=irTarifa()><h2>tarifas</h2></a></li>
-        <li> <a id="PDepartamentos" class="listados" onclick=irDepartamentos()><h2>departamentos</h2></a></li>
-        <li> <a id="pSalones"  class="listados" onclick=irSalones()><h2>salones</h2></a></li>
-        <li> <a id="pEstudiantes"  class="listados" onclick=irEstudiantes()><h2>Estudiantes</h2></a></li>
-        <li> <a id="pDocentes"  class="listados" onclick=irDocentes()><h2>Docentes</h2></a></li>
+navInput.style.display="block"
 
-      </ul>
-    </li>
-    <li>
-      <a><h1>crear usuarios</h1></a>
-      <ul class="sub">
-      <li> <a id="pEstudiante" class="nav-link" onclick=irEstudinates()><h2>estudiante</h2></h2></a></li>
-      <li><a id="pDocente" class="nav-link" onclick=irDocente()><h2>docente</h2></h2></a>        </li>
-
-      </ul>
-    </li>
-    <li>
-      <a ><h1>crear actividades</h1></a>
-      <ul class="sub">
-      <li> <a id="pAsignaturas" class="nav-link" onclick=irAsignaturas()><h2>asignatura</h2></h2></a></li>
-      <li> <a id="pMatricula" class="nav-link" onclick=irMatricula()><h2>matrícula </h2></h2></a></li>
-      </ul>  
-    </li>
-   
-  </ul>
-</nav>
-
- 
-  `;
   paginaInicio.style.display="none"
   portadaInput.style.display="block";
 
@@ -65,7 +31,7 @@ console.log(logInput)
 }
 
 const irProgramas = () => {
-
+  sessionStorage.setItem("pagina", 2);
   programasInput.style.display = 'block';
   periodosInput.style.display="none"
   tarifasInput.style.display = 'none';
@@ -85,6 +51,7 @@ const irProgramas = () => {
 }
 
 const irTarifa = () => {
+  sessionStorage.setItem("pagina", 3);
   programasInput.style.display = 'none';
   periodosInput.style.display="none"
   tarifasInput.style.display = 'block';
@@ -104,6 +71,7 @@ const irTarifa = () => {
 
 }
 const irDepartamentos = () => {
+  sessionStorage.setItem("pagina", 4);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'block';
@@ -120,6 +88,7 @@ const irDepartamentos = () => {
   matriculaInput.style.display = 'none';
 }
 const irSalones = () => {
+  sessionStorage.setItem("pagina", 5);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -136,6 +105,7 @@ const irSalones = () => {
   matriculaInput.style.display = 'none';
 }
 const irEstudinates = () => {
+  sessionStorage.setItem("pagina", 6);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -153,6 +123,7 @@ const irEstudinates = () => {
   cargarProEst();
 }
 const irDocente = () => {
+  sessionStorage.setItem("pagina", 7);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -170,6 +141,7 @@ const irDocente = () => {
   cargarDepProf();
 }
 const irMatricula = () => {
+  sessionStorage.setItem("pagina", 8);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -183,10 +155,11 @@ const irMatricula = () => {
   matriculaInput.style.display = 'block';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
+  ingresarMatricula();
 
-  cargarEstMat();
 }
 const irperiodos = () => {
+  sessionStorage.setItem("pagina", 9);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -203,6 +176,7 @@ const irperiodos = () => {
 
 }
 const irAsignaturas = () => {
+  sessionStorage.setItem("pagina", 10);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -220,10 +194,12 @@ const irAsignaturas = () => {
   cargarProAsig();
   cargarProfeAsig();
   cargarCursosAsig();
+  console.log("hola")
 
 }
 
-const irEstudiantes = () => {
+const irEstudiantes1 = () => {
+  sessionStorage.setItem("pagina", 11);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -238,7 +214,8 @@ const irEstudiantes = () => {
   docentesRInput.style.display = 'none';
   cargarEstudiantesR();
 }
-const irDocentes = () => {
+const irDocentes1 = () => {
+  sessionStorage.setItem("pagina", 12);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';

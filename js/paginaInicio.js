@@ -13,11 +13,17 @@ const paginaInicio = document.getElementById('incio');
 const portadaInput = document.getElementById('portada');
 const estudiantesRInput = document.getElementById('estudiantesR');
 const docentesRInput = document.getElementById('docentesR');
+let personName = sessionStorage.getItem("pagina");
 
 
 
 const paginaInciciosesion=()=>{
+   console.log(personName)
+if(parseInt(personName)<1){
+   sessionStorage.setItem("pagina", 0);
+}
     paginaInicio.style.display="block"
+    navInput.style.display="none"
 
     periodosInput.style.display="none"
     programasInput.style.display = 'none';
@@ -29,7 +35,6 @@ const paginaInciciosesion=()=>{
     matriculaInput.style.display = 'none';
     asignaturasInput.style.display="none";
     portadaInput.style.display="none";
-    
     paginaInicio.innerHTML=
            `                                   
         <div class="login">

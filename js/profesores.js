@@ -45,7 +45,7 @@ const enviarDatosProfesor=()=>{
     let dataNumIdentiP=numIdentiPInput.value;
     let dataDepatamnetoId=departamentoIdInput.value;
     
-    
+    if(dataNombreP!="" & dataApellidoP!="" & dataTiInputP!=""& dataNumIdentiP!=""&dataDepatamnetoId!=""){
     const nuevoProfesor = {
         id: cantProfesores+1,
         tipo_documento: dataTiInputP,
@@ -56,6 +56,9 @@ const enviarDatosProfesor=()=>{
     };
     guardarProfesor(nuevoProfesor)
     }
+else{
+    alert("falta campos por llenar")
+}}
     const guardarProfesor= async(nuevoProfesor)=>{
         try{
            

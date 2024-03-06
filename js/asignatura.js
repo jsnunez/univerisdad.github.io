@@ -21,14 +21,14 @@ const loadAsignaturas= async()=>{
     console.log(listaAsignaturas)
 
 }
-const cargarProAsig=()=>{
+const cargarProAsig= async()=>{
     
     let options='';
     console.log(listaProgramas)
     for(const programas of listaProgramas){
         console.log(programas)
  
-        options+=`<option value="${programas.id}">${programas.nombre}</option> `
+    options+=`<option value="${programas.id}">${programas.nombre}</option> `
     }
     ProgramaIdAInput.innerHTML=options
 }
@@ -164,7 +164,6 @@ const enviarDatosAsignaturas=()=>{
         ;
       
         horariosContainer.appendChild(nuevoHorario);
-        cargarSalonAsig();
 
 
     };
