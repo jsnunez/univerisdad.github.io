@@ -1,4 +1,7 @@
 let listaMatriculas = []
+let listaAsignaturaMatricula = [];
+let contadorAsignaturaMatricula = 0;
+let totalCosto = 0;
 const loadMatriculas = async () => {
     console.log("hola")
     try {
@@ -49,7 +52,7 @@ const cargarEstMat = () => {
     for (const estudiantes of listaEstudiantes) {
         console.log("Hola" + estudiantes)
 
-        options += `<option value="${estudiantes.id}">${estudiantes.nombre}</option> `
+        options += `<option value="${estudiantes.id}">${estudiantes.nombre} ${estudiantes.apellido}</option> `
     }
     return (options)
 }
@@ -85,34 +88,44 @@ const cargarHorario = () => {
 
 const agregarAsignatura = () => {
     const asignaturaInput = document.getElementById('cargarAsignatura');
-    const dataAsignatura=asignaturaInput.value;
-    const dataPrograma=listaAsignaturas[dataAsignatura-1].programa_id;
-
+    const dataAsignatura = asignaturaInput.value;
+    const dataPrograma = listaAsignaturas[dataAsignatura - 1].programa_id;
+    const datacurso = listaAsignaturas[dataAsignatura - 1].curso_id;
+    if (listaAsignaturaMatricula.indexOf(datacurso) !== -1) {
+        console.log("El valor existe en el array.");
+        return
+    } else {
+        console.log("El valor no existe en el array.");
+        listaAsignaturaMatricula[contadorAsignaturaMatricula] = datacurso;
+        contadorAsignaturaMatricula++;
+    }
+    console.log(listaAsignaturaMatricula);
+    const totalInput = document.getElementById('total');
 
     const PeriodoInput = document.getElementById('cargarPeriodo');
-    const dataPeriod=PeriodoInput.value;
-    var encontrados = listaTarifas.filter(function(elemento) {
+    const dataPeriod = PeriodoInput.value;
+    var encontrados = listaTarifas.filter(function (elemento) {
         return elemento.periodo_id == dataPeriod && elemento.programa_id == dataPrograma // ◄ Aquí se desea que aplique el arreglo comparaciones 
-       });
-            
+    });
+
     const horariosContainer = document.getElementById('tablaAsignatura');
     const nuevoHorario = document.createElement('tr');
     nuevoHorario.classList.add('asignaura');
     console.log(encontrados[0].costo_credito)
     nuevoHorario.innerHTML = `
   
-    <td>${listaAsignaturas[dataAsignatura-1].id}</td> 
-    <td>${listaAsignaturas[dataAsignatura-1].codigo}</td> 
-    <td>${listaAsignaturas[dataAsignatura-1].creditos}</td> 
-    <td>${listaPeriodos[dataPeriod-1].id}</td> 
+    <td>${listaAsignaturas[dataAsignatura - 1].id}</td> 
+    <td>${listaAsignaturas[dataAsignatura - 1].codigo}</td> 
+    <td>${listaAsignaturas[dataAsignatura - 1].creditos}</td> 
+    <td>${listaPeriodos[dataPeriod - 1].id}</td> 
 
-    <td>${(encontrados[0].costo_credito)*listaAsignaturas[dataAsignatura-1].creditos}</td> 
+    <td>${(encontrados[0].costo_credito) * listaAsignaturas[dataAsignatura - 1].creditos}</td> 
 
 `
         ;
-
+    totalCosto += (encontrados[0].costo_credito) * listaAsignaturas[dataAsignatura - 1].creditos
     horariosContainer.appendChild(nuevoHorario);
-
+    totalInput.innerHTML = totalCosto;
 
 };
 
@@ -206,7 +219,10 @@ const ingresarMatricula = () => {
 
 
                                 
-                               
+                            <div class="row" id="total">
+                        
+                            
+                        </div>
                                
                                 <div class="row" id="asignatura1">
                         

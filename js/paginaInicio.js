@@ -13,13 +13,25 @@ const paginaInicio = document.getElementById('incio');
 const portadaInput = document.getElementById('portada');
 const estudiantesRInput = document.getElementById('estudiantesR');
 const docentesRInput = document.getElementById('docentesR');
-let personName = sessionStorage.getItem("pagina");
 
+let paginaActual = sessionStorage.getItem("pagina");
 
+programasInput.style.display = 'none';
+tarifasInput.style.display = 'none';
+departamentosInput.style.display = 'none';
+salonesInput.style.display = 'none';
+estudiantesInput.style.display = 'none';
+docentesInput.style.display = 'none';
+periodosInput.style.display="none"
+asignaturasInput.style.display="none";
+portadaInput.style.display="none";
+matriculaInput.style.display = 'none';
+estudiantesRInput.style.display = 'none';
+docentesRInput.style.display = 'none';
 
 const paginaInciciosesion=()=>{
-   console.log(personName)
-if(parseInt(personName)<1){
+   console.log(paginaActual)
+if(parseInt(paginaActual)<1){
    sessionStorage.setItem("pagina", 0);
 }
     paginaInicio.style.display="block"

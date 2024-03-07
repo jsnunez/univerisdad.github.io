@@ -142,6 +142,9 @@ const irDocente = () => {
 }
 const irMatricula = () => {
   sessionStorage.setItem("pagina", 8);
+ listaAsignaturaMatricula=[];
+ totalCosto=0;
+ contadorAsignaturaMatricula=0;
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -214,7 +217,7 @@ const irEstudiantes1 = () => {
   docentesRInput.style.display = 'none';
   cargarEstudiantesR();
 }
-const irDocentes1 = () => {
+const irDocentes1 = async() => {
   sessionStorage.setItem("pagina", 12);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
@@ -229,5 +232,5 @@ const irDocentes1 = () => {
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'block';
 
-  cargarDocentesR();
+  await cargarDocentesR();
 }

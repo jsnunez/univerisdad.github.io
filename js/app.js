@@ -1,40 +1,40 @@
-document.addEventListener('DOMContentLoaded', () => {
-  if (personName == null) {
+document.addEventListener('DOMContentLoaded', async() => {
+  if (paginaActual == null) {
   paginaInciciosesion();
   }
-  loadProgramas();
-  loadTarifas();
-  loadDepartamentos();
-  loadSalones();
-  loadEstudiantes();
-  loadProfesores();
-  loadPeriodos();
-  loadCursoas();
-  loadAsignaturas();
+  await loadProgramas();
+  await loadTarifas();
+  await loadDepartamentos();
+  await loadSalones();
+  await loadEstudiantes();
+  await loadProfesores();
+  await loadPeriodos();
+  await loadCursoas();
+  await loadAsignaturas();
   //  irAsignaturas();
-  if (parseInt(personName) == 1) {
+  if (parseInt(paginaActual) == 1) {
 
   paginaPrincipal();
 }
-  if (parseInt(personName) == 2) {
+  if (parseInt(paginaActual) == 2) {
     irProgramas();
   }
-  if (parseInt(personName) == 3) {
+  if (parseInt(paginaActual) == 3) {
     irTarifa();
   }
-  if (parseInt(personName) == 4) {
+  if (parseInt(paginaActual) == 4) {
     irDepartamentos();
   }
-  if (parseInt(personName) == 5) {
+  if (parseInt(paginaActual) == 5) {
     irSalones();
   }
-  if (parseInt(personName) == 6) {
+  if (parseInt(paginaActual) == 6) {
     irEstudinates();
   }
-  if (parseInt(personName) == 7) {
+  if (parseInt(paginaActual) == 7) {
     irDocente();
   }
-  if (parseInt(personName) == 8) {
+  if (parseInt(paginaActual) == 8) {
     irperiodos();
     irMatricula();
   
@@ -43,17 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  if (parseInt(personName) == 9) {
+  if (parseInt(paginaActual) == 9) {
     irperiodos();
   }
-  if (parseInt(personName) == 10) {
+  if (parseInt(paginaActual) == 10) {
     irAsignaturas();
   }
-  if (parseInt(personName) == 11) {
+  if (parseInt(paginaActual) == 11) {
     irEstudiantes1();
   }
-  if (parseInt(personName) == 12) {
-    irDocente1();
+  if (parseInt(paginaActual) == 12) {
+    irDocente1();z
   }
 
 
