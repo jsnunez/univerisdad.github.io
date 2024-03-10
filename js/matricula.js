@@ -10,7 +10,8 @@ let h1 = {}
 let tamanoHorario = 0;
 let listaMatriculas = []
 let todasAsignaturas = []
-
+let estudiantesMatriculados=0;
+let banderaExisteEstudiante=0;
 const loadMatricula = async () => {
     console.log("hola")
     try {
@@ -177,17 +178,8 @@ const cargarHorarioM = () => {
 }
 const agregarAsignatura = () => {
     const estudianteElegido= document.getElementById('cargarEstudiantes');
-    
-    for (const estudiante of listaEstudiantes) {
-        console.log(estudiante.id)
-        console.log(estudianteElegido.value)
-        
-if(estudiante.id==estudianteElegido){
-    console.log("holaaaaaaaaa")
-}
+    banderaExisteEstudiante=0;
 
-
-    }
 
     const asignaturaInput = document.getElementById('cargarAsignatura');
     const dataAsignatura = asignaturaInput.value;
@@ -195,9 +187,23 @@ if(estudiante.id==estudianteElegido){
     const datacurso = listaAsignaturas[dataAsignatura - 1].curso_id;
     todasAsignaturas[idMatricula] = parseInt(listaAsignaturas[dataAsignatura - 1].id)
     console.log(listaAsignaturaMatricula);
+
+    for (const matricula of listaMatriculas){
+    
+        estudiantesMatriculados=matricula.estudiante_id
+        console.log(estudiantesMatriculados)
+        console.log(parseInt(estudianteElegido.value))
+        console.log("bander"+banderaExisteEstudiante)
+        if(parseInt(estudianteElegido.value)==estudiantesMatriculados){
+            banderaExisteEstudiante=1;
+            console.log("bandera"+banderaExisteEstudiante)
+            
+            alert("El estudiante ya se encuentra matriculado, seleccione otro estudiante")
+        }
+    }
+if(banderaExisteEstudiante!=1){
     const totalInput = document.getElementById('total');
     cargarEstudiantes.setAttribute("disabled","");
-
     const PeriodoInput = document.getElementById('cargarPeriodo');
     const dataPeriod = PeriodoInput.value;
     PeriodoInput.setAttribute("disabled","");
@@ -281,7 +287,7 @@ if(estudiante.id==estudianteElegido){
         totalInput.innerHTML = totalCosto;
 
     }
-
+}
 
 };
 
