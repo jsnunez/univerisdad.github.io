@@ -13,53 +13,102 @@
 <body>
     <header>
         <div id="nav">
-            <ul class="primary" >
+            <ul class="primary">
                 <li>
-                  <a><h1>Reportes</h1></a>
-                  <ul class="sub">
-                    <li><a id="pProgramas" class="listados" onclick=irProgramas()><h2>programas</h2></a></li>
-                    <li> <a id="pPeriodos" class="listados" onclick=irperiodos()><h2>periodos</h2></a></li>
-                    <li> <a id="PTarifas" class="listados" onclick=irTarifa()><h2>tarifas</h2></a></li>
-                    <li> <a id="PDepartamentos" class="listados" onclick=irDepartamentos()><h2>departamentos</h2></a></li>
-                    <li> <a id="pSalones"  class="listados" onclick=irSalones()><h2>salones</h2></a></li>
-                    <li> <a id="pEstudiantes"  class="listados" onclick=irEstudiantes1()><h2>Estudiantes</h2></a></li>
-                    <li> <a id="pDocentes"  class="listados" onclick=irDocentes1()><h2>Docentes</h2></a></li>
-                    <li> <a id="pDocentes"  class="listados" onclick=irDocentes1()><h2>Docentes</h2></a></li>
+                    <a>
+                        <h1>Reportes</h1>
+                    </a>
+                    <ul class="sub">
+                        <li><a id="pProgramas" class="listados" onclick=irProgramas()>
+                                <h2>programas</h2>
+                            </a></li>
+                        <li> <a id="pPeriodos" class="listados" onclick=irperiodos()>
+                                <h2>periodos</h2>
+                            </a></li>
+                        <li> <a id="PTarifas" class="listados" onclick=irTarifa()>
+                                <h2>tarifas</h2>
+                            </a></li>
+                        <li> <a id="PDepartamentos" class="listados" onclick=irDepartamentos()>
+                                <h2>departamentos</h2>
+                            </a></li>
+                        <li> <a id="pSalones" class="listados" onclick=irSalones()>
+                                <h2>salones</h2>
+                            </a></li>
+                        <li> <a id="pEstudiantes" class="listados" onclick=irEstudiantes1()>
+                                <h2>Estudiantes</h2>
+                            </a></li>
+                        <li> <a id="pDocentes" class="listados" onclick=irDocentes1()>
+                                <h2>Docentes</h2>
+                            </a></li>
+                        <li> <a id="pAsignaturas" class="listados" onclick=irAsignaturasR()>
+                                <h2>asignaturas</h2>
+                            </a></li>
+                            <li> <a id="pMatriculas" class="listados" onclick=irMatriculasR()>
+                                <h2>matriculas</h2>
+                            </a></li>
 
-                  </ul>
+
+                    </ul>
                 </li>
                 <li>
-                  <a><h1>crear usuarios</h1></a>
-                  <ul class="sub">
-                  <li> <a id="pEstudiante" class="nav-link" onclick=irEstudinates()><h2>estudiante</h2></h2></a></li>
-                  <li><a id="pDocente" class="nav-link" onclick=irDocente()><h2>docente</h2></h2></a>        </li>
-            
-                  </ul>
+                    <a>
+                        <h1>crear usuarios</h1>
+                    </a>
+                    <ul class="sub">
+                        <li> <a id="pEstudiante" class="nav-link" onclick=irEstudinates()>
+                                <h2>estudiante</h2>
+                                </h2>
+                            </a></li>
+                        <li><a id="pDocente" class="nav-link" onclick=irDocente()>
+                                <h2>docente</h2>
+                                </h2>
+                            </a> </li>
+
+                    </ul>
                 </li>
                 <li>
-                  <a ><h1>crear actividades</h1></a>
-                  <ul class="sub">
-                  <li> <a id="pAsignaturas" class="nav-link" onclick=irAsignaturas()><h2>asignatura</h2></h2></a></li>
-                  <li> <a id="pMatricula" class="nav-link" onclick=irMatricula()><h2>matrícula </h2></h2></a></li>
-                  </ul>  
+                    <a>
+                        <h1>crear actividades</h1>
+                    </a>
+                    <ul class="sub">
+                        <li> <a id="pAsignaturas" class="nav-link" onclick=irAsignaturas()>
+                                <h2>asignatura</h2>
+                                </h2>
+                            </a></li>
+                        <li> <a id="pMatricula" class="nav-link" onclick=irMatricula()>
+                                <h2>matrícula </h2>
+                                </h2>
+                            </a></li>
+                    </ul>
                 </li>
-               
-              </ul>
+                <li>
+                    <a>
+                        <h1>Informes</h1>
+                    </a>
+                    <ul class="sub">
+                        <li> <a id="pAsignaturas" class="nav-link" onclick=irInformes()>
+                                <h2>generales</h2>
+                                </h2>
+                            </a></li>
+    
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </header>    
+    </header>
 
-      <div id="incio">
-       
+    <div id="incio">
+
     </div>
     <div id="portada">
-        <img id="portadaimg"src="img/portada.jpg" >
+        <img id="portadaimg" src="img/portada.jpg">
 
     </div>
     <div id="imagenPortada">
 
     </div>
     <div class="container">
-  
+
 
         <div id="periodos">
 
@@ -69,25 +118,31 @@
         </div>
 
         <div id="tarifas">
-            
+
         </div>
 
         <div id="departamentos">
-            
+
         </div>
 
         <div id="salones">
-            
+
         </div>
 
         <div id="estudiantesR">
-            
+
         </div>
         <div id="docentesR">
-            
+
+        </div>
+        <div id="asignaturasR">
+
         </div>
         <div id="matriculasR">
-            
+
+        </div>
+        <div id="informes">
+
         </div>
         <div id="estudiantes">
             <section class="h-100 bg-dark">
@@ -305,7 +360,8 @@
                                                         <input type="text" id="codigoUnico"
                                                             class="form-control form-control-lg" />
                                                         <label class="form-label" for="codigoUnico">Codigo unico</label>
-                                                    <button class="btn btn-warning btn-lg ms-2" onclick="generarCodigo()">generar codigo</button>
+                                                        <button class="btn btn-warning btn-lg ms-2"
+                                                            onclick="generarCodigo()">generar codigo</button>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 mb-4">
@@ -323,7 +379,7 @@
                                                         profesor</label>
                                                     <select class="select" id="profesores">
                                                     </select>
-                                          
+
 
 
                                                 </div>
@@ -333,7 +389,7 @@
                                                     <label class="form-label" for="cupos">cupos disponibles</label>
                                                 </div>
                                             </div>
-                                     
+
                                             <div class="row">
                                                 <div class="col-md-6 mb-4">
 
@@ -353,15 +409,15 @@
                                                 </div>
                                             </div>
                                             <div class="row" id="horarios">
-                                            </div> 
-                                            <div class="row" >
+                                            </div>
+                                            <div class="row">
                                                 <table>
 
                                                 </table>
                                                 <button onclick="agregarHorario()">agregar horaros</button>
                                             </div>
                                             <div class="row">
-                                            
+
                                                 <div class="d-flex justify-content-end pt-3">
                                                     <button type="button" class="btn btn-light btn-lg">Reset
                                                         all</button>
@@ -380,12 +436,12 @@
             </section>
         </div>
         <div id="matricula">
-           
+
         </div>
 
     </div>
     <div id="regEstudiantes">
-    </div>            
+    </div>
 
 
 </body>
@@ -403,6 +459,7 @@
 <script src="js/cursos.js"></script>
 <script src="js/asignatura.js"></script>
 <script src="js/matricula.js"></script>
-
+<script src="js/informes.js"></script>
 <script src="js/app.js"></script>
+
 </html>

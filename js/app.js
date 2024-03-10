@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', async() => {
+document.addEventListener('DOMContentLoaded', async () => {
   if (paginaActual == null) {
-  paginaInciciosesion();
+    paginaInciciosesion();
   }
   await loadProgramas();
   await loadTarifas();
@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', async() => {
   await loadPeriodos();
   await loadCursoas();
   await loadAsignaturas();
+  await loadMatricula();
   //  irAsignaturas();
   if (parseInt(paginaActual) == 1) {
 
-  paginaPrincipal();
-}
+    paginaPrincipal();
+  }
   if (parseInt(paginaActual) == 2) {
     irProgramas();
   }
@@ -35,9 +36,9 @@ document.addEventListener('DOMContentLoaded', async() => {
     irDocente();
   }
   if (parseInt(paginaActual) == 8) {
-    irperiodos();
+
     irMatricula();
-  
+
 
     cargarEstMat();
   }
@@ -53,11 +54,18 @@ document.addEventListener('DOMContentLoaded', async() => {
     irEstudiantes1();
   }
   if (parseInt(paginaActual) == 12) {
-    irDocente1();z
+    irDocente1(); z
   }
 
-
-
+  if (parseInt(paginaActual) == 13) {
+    irAsignaturasR();
+  }
+  if (parseInt(paginaActual) == 14) {
+    irMatriculasR();
+  }
+  if (parseInt(paginaActual) == 15) {
+    irInformes();
+  }
 
 })
 

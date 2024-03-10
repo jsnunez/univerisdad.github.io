@@ -1,25 +1,25 @@
-let listaProgramas=[]
-const loadProgramas= async()=>{
+let listaProgramas = []
+const loadProgramas = async () => {
     console.log("hola")
-    try{
+    try {
 
-        const respuesta=await fetch('http://localhost:3000/programas');
-    
-        if(!respuesta.ok){
-           throw new Error('Error al cargar programas1. Estado: ',respuesta.status);
+        const respuesta = await fetch('http://localhost:3000/programas');
+
+        if (!respuesta.ok) {
+            throw new Error('Error al cargar programas1. Estado: ', respuesta.status);
         }
-        const programas=await respuesta.json();
+        const programas = await respuesta.json();
         listaProgramas.push(...programas);
 
-    }catch(error){
-        console.error("Error al cargar programas2",error.message);
+    } catch (error) {
+        console.error("Error al cargar programas2", error.message);
     }
     console.log(listaProgramas)
     cargarProgramas();
 }
 
-const cargarProgramas= ()=>{
-    let tamProgamas=listaProgramas.length;
+const cargarProgramas = () => {
+    let tamProgamas = listaProgramas.length;
     console.log(tamProgamas);
     programasInput.innerHTML = `
     <div class="table-responsive">
@@ -41,19 +41,19 @@ const cargarProgramas= ()=>{
        
     </table>
     </div>  `
-    
+
 }
 
 
-const generarOptionsProgramas=()=>{
-    let options='';
-    numProgramas=listaProgramas.length;
+const generarOptionsProgramas = () => {
+    let options = '';
+    numProgramas = listaProgramas.length;
     console.log(numProgramas);
-    for(const programas of listaProgramas){
+    for (const programas of listaProgramas) {
         console.log(programas)
-        options+=`<tr>`
-        options+=`<td>${programas.id}</td> <td>${programas.nombre}</td> <td>${programas.nivel}</th>`;
-        options+=`</tr>`
+        options += `<tr>`
+        options += `<td>${programas.id}</td> <td>${programas.nombre}</td> <td>${programas.nivel}</th>`;
+        options += `</tr>`
     }
     console.log(options)
     return options;

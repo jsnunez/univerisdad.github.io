@@ -3,18 +3,18 @@
 
 
 const paginaPrincipal = () => {
-  let logInput=document.getElementById("login-email");
+  let logInput = document.getElementById("login-email");
   sessionStorage.setItem("pagina", 1);
 
-console.log(logInput)
- 
+  console.log(logInput)
 
-navInput.style.display="block"
 
-  paginaInicio.style.display="none"
-  portadaInput.style.display="block";
+  navInput.style.display = "block"
 
-  periodosInput.style.display="none"
+  paginaInicio.style.display = "none"
+  portadaInput.style.display = "block";
+
+  periodosInput.style.display = "none"
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
@@ -22,49 +22,50 @@ navInput.style.display="block"
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
   matriculaInput.style.display = 'none';
-  asignaturasInput.style.display="none";
+  asignaturasInput.style.display = "none";
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
 
-
-
+  asignaturasRInput.style.display = 'none';
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
 }
 
 const irProgramas = () => {
   sessionStorage.setItem("pagina", 2);
   programasInput.style.display = 'block';
-  periodosInput.style.display="none"
+  periodosInput.style.display = "none"
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
   matriculaInput.style.display = 'none';
-  periodosInput.style.display="none"
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
-
-
-
+  matriculasRInput.style.display = 'none';
+  asignaturasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
 }
 
 const irTarifa = () => {
   sessionStorage.setItem("pagina", 3);
   programasInput.style.display = 'none';
-  periodosInput.style.display="none"
+  periodosInput.style.display = "none"
   tarifasInput.style.display = 'block';
   departamentosInput.style.display = 'none';
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
   matriculaInput.style.display = 'none';
-  periodosInput.style.display="none"
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
   estudiantesRInput.style.display = 'none';
-  
+
   docentesRInput.style.display = 'none';
 
 
@@ -80,12 +81,13 @@ const irDepartamentos = () => {
   docentesInput.style.display = 'none';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
-
-  periodosInput.style.display="none";
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
-
+  matriculasRInput.style.display = 'none';
+  periodosInput.style.display = "none";
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  asignaturasRInput.style.display = 'none';
   matriculaInput.style.display = 'none';
+  informesInput.style.display = 'none';
 }
 const irSalones = () => {
   sessionStorage.setItem("pagina", 5);
@@ -93,16 +95,18 @@ const irSalones = () => {
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
   salonesInput.style.display = 'block';
-  periodosInput.style.display="none";
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
-
+  periodosInput.style.display = "none";
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  asignaturasRInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
-
+  asignaturasRInput.style.display = 'none';
+  matriculasRInput.style.display = 'none';
   matriculaInput.style.display = 'none';
+  informesInput.style.display = 'none';
 }
 const irEstudinates = () => {
   sessionStorage.setItem("pagina", 6);
@@ -111,15 +115,16 @@ const irEstudinates = () => {
   departamentosInput.style.display = 'none';
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'block';
-  periodosInput.style.display="none";
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
-
+  periodosInput.style.display = "none";
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  matriculasRInput.style.display = 'none';
   docentesInput.style.display = 'none';
   matriculaInput.style.display = 'none';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
-
+  asignaturasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
   cargarProEst();
 }
 const irDocente = () => {
@@ -129,35 +134,38 @@ const irDocente = () => {
   departamentosInput.style.display = 'none';
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
-  periodosInput.style.display="none";
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
-
+  periodosInput.style.display = "none";
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  matriculasRInput.style.display = 'none';
   docentesInput.style.display = 'block';
   matriculaInput.style.display = 'none';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
-
+  asignaturasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
   cargarDepProf();
 }
 const irMatricula = () => {
   sessionStorage.setItem("pagina", 8);
- listaAsignaturaMatricula=[];
- totalCosto=0;
- contadorAsignaturaMatricula=0;
+  listaAsignaturaMatricula = [];
+  totalCosto = 0;
+  contadorAsignaturaMatricula = 0;
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
   departamentosInput.style.display = 'none';
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
-  periodosInput.style.display="none"
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
-
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  asignaturasRInput.style.display = 'none';
   matriculaInput.style.display = 'block';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
   ingresarMatricula();
 
 }
@@ -169,13 +177,15 @@ const irperiodos = () => {
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
-  periodosInput.style.display="block"
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
-
+  periodosInput.style.display = "block"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  asignaturasRInput.style.display = 'none';
   matriculaInput.style.display = 'none';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
 
 }
 const irAsignaturas = () => {
@@ -186,14 +196,15 @@ const irAsignaturas = () => {
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
-  periodosInput.style.display="none"
-  asignaturasInput.style.display="block";
-  portadaInput.style.display="none";
-
-  matriculaInput.style.display = 'none'; 
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "block";
+  portadaInput.style.display = "none";
+  asignaturasRInput.style.display = 'none';
+  matriculaInput.style.display = 'none';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'none';
-
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
   cargarProAsig();
   cargarProfeAsig();
   cargarCursosAsig();
@@ -209,15 +220,18 @@ const irEstudiantes1 = () => {
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
-  periodosInput.style.display="none"
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
   matriculaInput.style.display = 'none';
   estudiantesRInput.style.display = 'block';
   docentesRInput.style.display = 'none';
+  asignaturasRInput.style.display = 'none';
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
   cargarEstudiantesR();
 }
-const irDocentes1 = async() => {
+const irDocentes1 = async () => {
   sessionStorage.setItem("pagina", 12);
   programasInput.style.display = 'none';
   tarifasInput.style.display = 'none';
@@ -225,12 +239,74 @@ const irDocentes1 = async() => {
   salonesInput.style.display = 'none';
   estudiantesInput.style.display = 'none';
   docentesInput.style.display = 'none';
-  periodosInput.style.display="none"
-  asignaturasInput.style.display="none";
-  portadaInput.style.display="none";
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
   matriculaInput.style.display = 'none';
   estudiantesRInput.style.display = 'none';
   docentesRInput.style.display = 'block';
-
+  asignaturasRInput.style.display = 'none';
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
   await cargarDocentesR();
+}
+const irAsignaturasR = async () => {
+  sessionStorage.setItem("pagina", 13);
+  programasInput.style.display = 'none';
+  tarifasInput.style.display = 'none';
+  departamentosInput.style.display = 'none';
+  salonesInput.style.display = 'none';
+  estudiantesInput.style.display = 'none';
+  docentesInput.style.display = 'none';
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  matriculaInput.style.display = 'none';
+  estudiantesRInput.style.display = 'none';
+  docentesRInput.style.display = 'none';
+  asignaturasRInput.style.display = 'block';
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'none';
+  cargarAsignatura();
+}
+
+const irMatriculasR = async () => {
+  sessionStorage.setItem("pagina", 14);
+  programasInput.style.display = 'none';
+  tarifasInput.style.display = 'none';
+  departamentosInput.style.display = 'none';
+  salonesInput.style.display = 'none';
+  estudiantesInput.style.display = 'none';
+  docentesInput.style.display = 'none';
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  matriculaInput.style.display = 'none';
+  estudiantesRInput.style.display = 'none';
+  docentesRInput.style.display = 'none';
+  asignaturasRInput.style.display = 'none';
+  matriculasRInput.style.display = 'block';
+  informesInput.style.display = 'none';
+
+  cargarMatriculas();
+}
+const irInformes = async () => {
+  sessionStorage.setItem("pagina", 15);
+  programasInput.style.display = 'none';
+  tarifasInput.style.display = 'none';
+  departamentosInput.style.display = 'none';
+  salonesInput.style.display = 'none';
+  estudiantesInput.style.display = 'none';
+  docentesInput.style.display = 'none';
+  periodosInput.style.display = "none"
+  asignaturasInput.style.display = "none";
+  portadaInput.style.display = "none";
+  matriculaInput.style.display = 'none';
+  estudiantesRInput.style.display = 'none';
+  docentesRInput.style.display = 'none';
+  asignaturasRInput.style.display = 'none';
+  matriculasRInput.style.display = 'none';
+  informesInput.style.display = 'block';
+
+  cargarInformes();
 }

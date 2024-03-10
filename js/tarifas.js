@@ -1,25 +1,25 @@
-let listaTarifas=[]
-const loadTarifas= async()=>{
+let listaTarifas = []
+const loadTarifas = async () => {
     console.log("hola")
-    try{
+    try {
 
-        const respuesta=await fetch('http://localhost:3000/tarifas');
-    
-        if(!respuesta.ok){
-           throw new Error('Error al cargar tarifas1. Estado: ',respuesta.status);
+        const respuesta = await fetch('http://localhost:3000/tarifas');
+
+        if (!respuesta.ok) {
+            throw new Error('Error al cargar tarifas1. Estado: ', respuesta.status);
         }
-        const tarifas=await respuesta.json();
+        const tarifas = await respuesta.json();
         listaTarifas.push(...tarifas);
 
-    }catch(error){
-        console.error("Error al cargar tarifas2",error.message);
+    } catch (error) {
+        console.error("Error al cargar tarifas2", error.message);
     }
     console.log(listaTarifas)
     cargarTarifas();
 }
 
-const cargarTarifas= ()=>{
-    let tamProgamas=listaTarifas.length;
+const cargarTarifas = () => {
+    let tamProgamas = listaTarifas.length;
     console.log(tamProgamas);
     tarifasInput.innerHTML = `
     <div class="table-responsive">
@@ -42,19 +42,19 @@ const cargarTarifas= ()=>{
        
     </table>
     </div>  `
-    
+
 }
 
 
-const generarOptionsTarifas=()=>{
-    let options='';
-    numTarifas=listaTarifas.length;
+const generarOptionsTarifas = () => {
+    let options = '';
+    numTarifas = listaTarifas.length;
     console.log(numTarifas);
-    for(const tarifas of listaTarifas){
+    for (const tarifas of listaTarifas) {
         console.log(tarifas)
-        options+=`<tr>`
-        options+=`<td>${tarifas.id}</td> <td>${tarifas.costo_credito}</td> <td>${tarifas.periodo_id}</td><td>${tarifas.programa_id}</td>`;
-        options+=`</tr>`
+        options += `<tr>`
+        options += `<td>${tarifas.id}</td> <td>${tarifas.costo_credito}</td> <td>${tarifas.periodo_id}</td><td>${tarifas.programa_id}</td>`;
+        options += `</tr>`
     }
     console.log(options)
     return options;

@@ -1,25 +1,25 @@
-let listaDepartamentos=[]
-const loadDepartamentos= async()=>{
+let listaDepartamentos = []
+const loadDepartamentos = async () => {
     console.log("hola")
-    try{
+    try {
 
-        const respuesta=await fetch('http://localhost:3000/departamentos');
-    
-        if(!respuesta.ok){
-           throw new Error('Error al cargar departamentos1. Estado: ',respuesta.status);
+        const respuesta = await fetch('http://localhost:3000/departamentos');
+
+        if (!respuesta.ok) {
+            throw new Error('Error al cargar departamentos1. Estado: ', respuesta.status);
         }
-        const departamentos=await respuesta.json();
+        const departamentos = await respuesta.json();
         listaDepartamentos.push(...departamentos);
 
-    }catch(error){
-        console.error("Error al cargar departamentos2",error.message);
+    } catch (error) {
+        console.error("Error al cargar departamentos2", error.message);
     }
     console.log(listaDepartamentos)
     cargarDepartamentos();
 }
 
-const cargarDepartamentos= ()=>{
-    let tamProgamas=listaDepartamentos.length;
+const cargarDepartamentos = () => {
+    let tamProgamas = listaDepartamentos.length;
     console.log(tamProgamas);
     departamentosInput.innerHTML = `
     <div class="table-responsive">
@@ -41,19 +41,19 @@ const cargarDepartamentos= ()=>{
        
     </table>
     </div>  `
-    
+
 }
 
 
-const generarOptionsDepartamentos=()=>{
-    let options='';
-    numDepartamentos=listaDepartamentos.length;
+const generarOptionsDepartamentos = () => {
+    let options = '';
+    numDepartamentos = listaDepartamentos.length;
     console.log(numDepartamentos);
-    for(const departamentos of listaDepartamentos){
+    for (const departamentos of listaDepartamentos) {
         console.log(departamentos)
-        options+=`<tr>`
-        options+=`<td>${departamentos.id}</td> <td>${departamentos.nombre}</td> `;
-        options+=`</tr>`
+        options += `<tr>`
+        options += `<td>${departamentos.id}</td> <td>${departamentos.nombre}</td> `;
+        options += `</tr>`
     }
     console.log(options)
     return options;

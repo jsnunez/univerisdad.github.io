@@ -1186,6 +1186,15 @@
       "fecha_nacimiento": "1994-03-28",
       "sexo": "Masculino",
       "programa_id": "9"
+    },
+    {
+      "id": "2",
+      "estudiante_id": "1",
+      "asignatura_id": [
+        "1"
+      ],
+      "periodo_id": "1",
+      "precio": 4000
     }
   ],
   "cursos": [
@@ -1523,15 +1532,15 @@
       "programa_id": 1,
       "horario_clases": [
         {
-          "dia": "Lunes",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
+          "dia": "lunes",
+          "hora_inicio": "8:00 am",
+          "hora_fin": "10:00 am",
           "salon_id": 1
         },
         {
-          "dia": "Martes",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
+          "dia": "martes",
+          "hora_inicio": "8:00 am",
+          "hora_fin": "10:00 am",
           "salon_id": 1
         }
       ]
@@ -1546,15 +1555,15 @@
       "programa_id": 2,
       "horario_clases": [
         {
-          "dia": "Lunes",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
+          "dia": "lunes",
+          "hora_inicio": "10:00 am",
+          "hora_fin": "12:00 m",
           "salon_id": 1
         },
         {
-          "dia": "Jueves",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
+          "dia": "jueves",
+          "hora_inicio": "10:00 am",
+          "hora_fin": "12:00 m",
           "salon_id": 1
         }
       ]
@@ -1583,7 +1592,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "curso_id": 11,
       "codigo": "ING-SOF-PER-2024",
       "creditos": 4,
@@ -1606,7 +1615,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "curso_id": 17,
       "codigo": "LOG-COM-PER-2024",
       "creditos": 2,
@@ -1629,7 +1638,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "curso_id": 4,
       "codigo": "SIS-OP-PER-2024",
       "creditos": 4,
@@ -1652,7 +1661,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "curso_id": 14,
       "codigo": "MAT-DIS-PER-2024",
       "creditos": 4,
@@ -1673,22 +1682,126 @@
           "salon_id": "17"
         }
       ]
+    },
+    {
+      "id": "8",
+      "curso_id": 17,
+      "codigo": "LOG-COM-PER-2024",
+      "creditos": 4,
+      "profesor_id": 6,
+      "cupos_disponibles": 35,
+      "programa_id": "8",
+      "horario_clases": [
+        {
+          "dia": "lunes",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "11"
+        },
+        {
+          "dia": "martes",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "16"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "curso_id": 19,
+      "codigo": "CRI-PER-2024",
+      "creditos": 4,
+      "profesor_id": 7,
+      "cupos_disponibles": 30,
+      "programa_id": "10",
+      "horario_clases": [
+        {
+          "dia": "jueves",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "15"
+        },
+        {
+          "dia": "lunes",
+          "hora_inicio": "8:00 am",
+          "hora_fin": "10:00 am",
+          "salon_id": "13"
+        }
+      ]
     }
   ],
   "matriculas": [
     {
       "id": "1",
       "estudiante_id": 1,
-      "asignatura_id": 1,
+      "asignatura_id": [
+        1
+      ],
       "periodo_id": 1,
       "precio": 4000
     },
     {
-      "id": "1",
-      "estudiante_id": 1,
-      "asignatura_id": 2,
+      "id": "2",
+      "estudiante_id": 8,
+      "asignatura_id": [
+        2
+      ],
       "periodo_id": 1,
       "precio": 3300
+    },
+    {
+      "id": "3",
+      "estudiante_id": 9,
+      "asignatura_id": [
+        5,
+        7
+      ],
+      "periodo_id": "2",
+      "precio": 10400
+    },
+    {
+      "id": "4",
+      "estudiante_id": 4,
+      "asignatura_id": [
+        9,
+        6,
+        7,
+        8
+      ],
+      "periodo_id": "2",
+      "precio": 29200
+    },
+    {
+      "id": "5",
+      "estudiante_id": 5,
+      "asignatura_id": [
+        1,
+        4,
+        8
+      ],
+      "periodo_id": "1",
+      "precio": 14800
+    },
+    {
+      "id": "6",
+      "estudiante_id": 7,
+      "asignatura_id": [
+        1
+      ],
+      "periodo_id": "2",
+      "precio": 4000
+    },
+    {
+      "id": 7,
+      "estudiante_id": 21,
+      "asignatura_id": [
+        1,
+        7,
+        5,
+        3
+      ],
+      "periodo_id": "1",
+      "precio": 12400
     }
   ]
 }

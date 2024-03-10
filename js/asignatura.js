@@ -81,11 +81,11 @@ const enviarDatosAsignaturas = () => {
     const horarios = [];
     const horariosInputs = document.querySelectorAll('.horario');
     let bandera = 0;
-    let contadorHorario=0;
+    let contadorHorario = 0;
 
     horariosInputs.forEach(horarioInput => {
         contadorHorario++;
-       
+
         const diaSemana = horarioInput.querySelector('.diaSemana').value;
         const salonHora = horarioInput.querySelector('.salonHorarioAsignatura').value;
 
@@ -129,7 +129,7 @@ const enviarDatosAsignaturas = () => {
 
         const tamAsignatura = listaAsignaturas.length;
 
-       
+
 
         for (i = 0; i < tamAsignatura; i++) {
 
@@ -139,33 +139,33 @@ const enviarDatosAsignaturas = () => {
 
                 if (diaSemana == listaAsignaturas[i].horario_clases[x].dia
                     && horaInicio == listaAsignaturas[i].horario_clases[x].hora_inicio
-                    && salonHora == listaAsignaturas[i].horario_clases[x].salon_id ) {
+                    && salonHora == listaAsignaturas[i].horario_clases[x].salon_id) {
                     bandera = 1;
                 }
             }
         }
         console.log(horarios)
-if(contadorHorario>1){
-    console.log(horarios[0].dia)
-    if(horarios[0].dia == diaSemana & horarios[0].hora_inicio == horaInicio & horarios[0].salon_id){
-        alert(`esta repetido los nuevos horarios`)
-        bandera=1;
-       }
-}
-       
-        if(bandera==0){
-    horarios.push({ dia: diaSemana, hora_inicio: horaInicio, hora_fin: horaFin, salon_id: salonHora });
+        if (contadorHorario > 1) {
+            console.log(horarios[0].dia)
+            if (horarios[0].dia == diaSemana & horarios[0].hora_inicio == horaInicio & horarios[0].salon_id) {
+                alert(`esta repetido los nuevos horarios`)
+                bandera = 1;
+            }
+        }
 
-}
-else{
-    alert(`esta repetido el horario ${contadorHorario}`)
+        if (bandera == 0) {
+            horarios.push({ dia: diaSemana, hora_inicio: horaInicio, hora_fin: horaFin, salon_id: salonHora });
 
-}
+        }
+        else {
+            alert(`esta repetido el horario ${contadorHorario}`)
 
-console.log(horarios)
-      
+        }
 
-      
+        console.log(horarios)
+
+
+
     });
 
 
@@ -181,7 +181,7 @@ console.log(horarios)
             horarios
 
     };
-    if (bandera==0 & datacodigoUnico != "" & datacreditos != "" & dataprofesores != "" & datacupos != "" & dataProgramaIdA != "") {
+    if (bandera == 0 & datacodigoUnico != "" & datacreditos != "" & dataprofesores != "" & datacupos != "" & dataProgramaIdA != "") {
 
         guardarAsignatura(nuevaAsignatura)
     }
@@ -265,11 +265,98 @@ const salonHorarioPrograma = () => {
 }
 
 
-const generarCodigo=()=>{
-      let cursoIdInput = document.getElementById("cursoId");
-      let codIdInput = document.getElementById("codigoUnico");
-      const oracion =  listaCursos[cursoIdInput.value-1].codigo+"-PER-2024";
-      codIdInput.value=oracion
+const generarCodigo = () => {
+    let cursoIdInput = document.getElementById("cursoId");
+    let codIdInput = document.getElementById("codigoUnico");
+    const oracion = listaCursos[cursoIdInput.value - 1].codigo + "-PER-2024";
+    codIdInput.value = oracion
 
-      console.log(oracion);
+    console.log(oracion);
+}
+
+const cargarAsignatura = () => {
+
+    const asignaturasRInput = document.getElementById('asignaturasR');
+
+    let tamProgamas = listaDepartamentos.length;
+    asignaturasRInput.innerHTML = `
+    <div class="table-responsive">
+    <table  class="table">
+      <thead>
+            <tr>
+            <th><h2>id</th>
+            <th><h2>curso_id</th>
+            <th><h2>codigo</th>
+            <th><h2>credito</th>
+            <th><h2>profesor_id</th>
+            <th><h2>cupos_disponibles</th>
+            <th><h2>programa_id</th>
+            <th><h2>horario_clases</th>
+       
+
+            </tr>
+        </thead>
+        <tbody id="tablaDepartamentocion">
+        ${generarOptionsAsignatura()}
+    
+        </tbody>
+       
+
+       
+    </table>
+    </div>  `
+
+}
+
+
+const generarOptionsAsignatura = () => {
+    let options = '';
+    for (const asignatura of listaAsignaturas) {
+        console.log(departamentos)
+        options += `<tr>`
+        options += `<td>${asignatura.id}</td> 
+        <td>${asignatura.curso_id}</td>
+        <td>${asignatura.codigo}</td>
+        <td>${asignatura.creditos}</td>
+        <td>${asignatura.profesor_id}</td> 
+        <td>${asignatura.cupos_disponibles}</td>
+        <td>${asignatura.programa_id}</td> 
+        <td>
+    <table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <h5>dia
+                </th>
+                <th>
+                    <h5>HoraInicio
+                </th>
+              
+              
+
+            </tr>
+        </thead>
+        <tbody id="tabladias">
+        <td>${asignatura.horario_clases[0].dia}</td> 
+        <td>${asignatura.horario_clases[0].hora_inicio}</td> 
+        <tr>
+        <td>${asignatura.horario_clases[1].dia}</td> 
+        <td>${asignatura.horario_clases[1].hora_inicio}</td> 
+
+        </tr>
+        </tbody>
+
+
+
+    </table>
+
+</tr>
+    
+`;
+        options += `</tr>`
+    }
+    console.log(options)
+    return options;
+
 }

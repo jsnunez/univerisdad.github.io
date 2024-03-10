@@ -13,6 +13,9 @@ const paginaInicio = document.getElementById('incio');
 const portadaInput = document.getElementById('portada');
 const estudiantesRInput = document.getElementById('estudiantesR');
 const docentesRInput = document.getElementById('docentesR');
+const asignaturasRInput = document.getElementById('asignaturasR');
+const matriculasRInput = document.getElementById('matriculasR');
+const informesInput = document.getElementById('informes');
 
 let paginaActual = sessionStorage.getItem("pagina");
 
@@ -22,33 +25,39 @@ departamentosInput.style.display = 'none';
 salonesInput.style.display = 'none';
 estudiantesInput.style.display = 'none';
 docentesInput.style.display = 'none';
-periodosInput.style.display="none"
-asignaturasInput.style.display="none";
-portadaInput.style.display="none";
+periodosInput.style.display = "none"
+asignaturasInput.style.display = "none";
+portadaInput.style.display = "none";
 matriculaInput.style.display = 'none';
 estudiantesRInput.style.display = 'none';
 docentesRInput.style.display = 'none';
+asignaturasRInput.style.display = 'none';
+matriculasRInput.style.display = 'none';
+informesInput.style.display = 'none';
 
-const paginaInciciosesion=()=>{
+const paginaInciciosesion = () => {
    console.log(paginaActual)
-if(parseInt(paginaActual)<1){
-   sessionStorage.setItem("pagina", 0);
-}
-    paginaInicio.style.display="block"
-    navInput.style.display="none"
+   if (parseInt(paginaActual) < 1) {
+      sessionStorage.setItem("pagina", 0);
+   }
+   paginaInicio.style.display = "block"
+   navInput.style.display = "none"
 
-    periodosInput.style.display="none"
-    programasInput.style.display = 'none';
-    tarifasInput.style.display = 'none';
-    departamentosInput.style.display = 'none';
-    salonesInput.style.display = 'none';
-    estudiantesInput.style.display = 'none';
-    docentesInput.style.display = 'none';
-    matriculaInput.style.display = 'none';
-    asignaturasInput.style.display="none";
-    portadaInput.style.display="none";
-    paginaInicio.innerHTML=
-           `                                   
+   periodosInput.style.display = "none"
+   programasInput.style.display = 'none';
+   tarifasInput.style.display = 'none';
+   departamentosInput.style.display = 'none';
+   salonesInput.style.display = 'none';
+   estudiantesInput.style.display = 'none';
+   docentesInput.style.display = 'none';
+   matriculaInput.style.display = 'none';
+   asignaturasInput.style.display = "none";
+   portadaInput.style.display = "none";
+   asignaturasRInput.style.display = 'none';
+   matriculasRInput.style.display = 'none';
+   informesInput.style.display = 'none';
+   paginaInicio.innerHTML =
+      `                                   
         <div class="login">
          <img src="img/fondo.png" alt="login image" class="login__img">
 
@@ -90,20 +99,20 @@ if(parseInt(paginaActual)<1){
          </form>
       </div>
       
-      `    
+      `
 
 }
-const ingresar=()=>{
-   const inputEmail = document.getElementById("login-email"); 
-   const inputPass = document.getElementById("login-pass"); 
+const ingresar = () => {
+   const inputEmail = document.getElementById("login-email");
+   const inputPass = document.getElementById("login-pass");
 
-   const emailData=inputEmail.value;
-   
-   const passData=inputPass.value;
+   const emailData = inputEmail.value;
 
-   if("admin"==emailData && "12345"==passData){
+   const passData = inputPass.value;
+
+   if ("admin" == emailData && "12345" == passData) {
       paginaPrincipal();
    }
-   
+
 
 }

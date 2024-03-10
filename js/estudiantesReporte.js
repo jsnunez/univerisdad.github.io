@@ -1,8 +1,8 @@
 
-const cargarEstudiantesR= ()=>{
+const cargarEstudiantesR = () => {
     const estudiantesRInput = document.getElementById('estudiantesR');
 
-    let tamProgamas=listaDepartamentos.length;
+    let tamProgamas = listaDepartamentos.length;
     console.log(tamProgamas);
     estudiantesRInput.innerHTML = `
     <div class="table-responsive">
@@ -33,22 +33,22 @@ const cargarEstudiantesR= ()=>{
        
     </table>
     </div>  `
-    
+
 }
 
 
-const generarOptionsEstudiantesR=()=>{
-    let options='';
-    for(const Estudiantes of listaEstudiantes){
+const generarOptionsEstudiantesR = () => {
+    let options = '';
+    for (const Estudiantes of listaEstudiantes) {
         console.log(departamentos)
-        options+=`<tr>`
-        options+=`<td>${Estudiantes.id}</td> <td>${Estudiantes.nombre}</td>
+        options += `<tr>`
+        options += `<td>${Estudiantes.id}</td> <td>${Estudiantes.nombre}</td>
         <td>${Estudiantes.apellido}</td> <td>${Estudiantes.tipo_documento}</td>
         <td>${Estudiantes.numero_documento}</td> <td>${Estudiantes.ciudad_residencia}</td>
         <td>${Estudiantes.direccion}</td> <td>${Estudiantes.telefono}</td>
         <td>${Estudiantes.fecha_nacimiento}</td> <td>${Estudiantes.sexo}</td>
         <td>${Estudiantes.programa_id}</td>`;
-        options+=`</tr>`
+        options += `</tr>`
     }
     console.log(options)
     return options;
