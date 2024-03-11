@@ -521,6 +521,14 @@
       "nombre": "carlos",
       "apellido": "sanchez",
       "departamento_id": "4"
+    },
+    {
+      "id": 40,
+      "tipo_documento": "CC",
+      "numero_documento": "423453434",
+      "nombre": "jaime",
+      "apellido": "gil",
+      "departamento_id": "4"
     }
   ],
   "alumnos": [
@@ -1188,13 +1196,17 @@
       "programa_id": "9"
     },
     {
-      "id": "2",
-      "estudiante_id": "1",
-      "asignatura_id": [
-        "1"
-      ],
-      "periodo_id": "1",
-      "precio": 4000
+      "id": 52,
+      "nombre": "juan carlo",
+      "apellido": "gomez",
+      "tipo_documento": "CC",
+      "numero_documento": "2324323432",
+      "ciudad_residencia": "bucaramanga",
+      "direccion": "calle 30",
+      "telefono": "432432423",
+      "fecha_nacimiento": "2001-02-06",
+      "sexo": "Masculino",
+      "programa_id": "9"
     }
   ],
   "cursos": [
@@ -2275,6 +2287,29 @@
           "hora_inicio": "2:00 pm",
           "hora_fin": "4:00 pm",
           "salon_id": "7"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "curso_id": 20,
+      "codigo": "PROC-IMG_PR16",
+      "creditos": 5,
+      "profesor_id": 16,
+      "cupos_disponibles": 15,
+      "programa_id": "4",
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "10:00 am",
+          "hora_fin": "12:00 m",
+          "salon_id": "8"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "16"
         }
       ]
     }

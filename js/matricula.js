@@ -284,7 +284,7 @@ if(banderaExisteEstudiante!=1){
             ;
         totalCosto += (encontrados[0].costo_credito) * listaAsignaturas[dataAsignatura - 1].creditos
         horariosContainer.appendChild(nuevoHorario);
-        totalInput.innerHTML = totalCosto;
+        totalInput.innerHTML = `<h3>totalCosto: ${totalCosto}`;
 
     }
 }
