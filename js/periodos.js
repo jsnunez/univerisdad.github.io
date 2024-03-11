@@ -22,6 +22,7 @@ const cargarPeriodos = () => {
     let tamProgamas = listaPeriodos.length;
     console.log(tamProgamas);
     periodosInput.innerHTML = `
+    <H1>Periodos
     <div class="table-responsive">
     <table  class="table">
       <thead>

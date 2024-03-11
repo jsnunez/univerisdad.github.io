@@ -22,6 +22,7 @@ const cargarTarifas = () => {
     let tamProgamas = listaTarifas.length;
     console.log(tamProgamas);
     tarifasInput.innerHTML = `
+    <H1>tarifas
     <div class="table-responsive">
     <table  class="table table-hover">
       <thead>

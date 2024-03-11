@@ -100,6 +100,7 @@ const cargarDocentesR = () => {
 
 
     docentesRInput.innerHTML = `
+    <H1>Profesores
     <div class="table-responsive">
     <table  class="table">
       <thead>

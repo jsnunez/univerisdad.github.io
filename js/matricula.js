@@ -560,6 +560,7 @@ const verTodosEstu = () => {
     let tamProgamas = listaPeriodos.length;
     console.log(tamProgamas);
     estudiantesRegInput.innerHTML = `
+    <H1>matriculas
     <div class="table-responsive" id="regEstudiantes1">
     <table  class="table">
       <thead>

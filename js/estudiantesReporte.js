@@ -5,6 +5,7 @@ const cargarEstudiantesR = () => {
     let tamProgamas = listaDepartamentos.length;
     console.log(tamProgamas);
     estudiantesRInput.innerHTML = `
+    <H1>Estudiantes
     <div class="table-responsive">
     <table  class="table">
       <thead>

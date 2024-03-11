@@ -1,18 +1,26 @@
 const cargarInformes=()=>{
     let valorTotalMatriculas=0;
+    let valorTotalMatriculas1=0;
     console.log(listaMatriculas)
     informesInput.innerHTML="hola" 
     for(const matriculas of listaMatriculas){
+        if(matriculas.periodo_id==1){
         valorTotalMatriculas+= matriculas.precio
+        }
+        if(matriculas.periodo_id==2){
+            valorTotalMatriculas1+= matriculas.precio
+            }
     }
     console.log(valorTotalMatriculas)
    
     
 const repeticionesAsignaturas = {};
-
+    
+const repeticionesAsignaturas2 = {};
 // Iteramos sobre cada matrícula
 listaMatriculas.forEach(matricula => {
     // Verificamos si asignatura_id es un array
+    if(matricula.periodo_id==1){
     if (Array.isArray(matricula.asignatura_id)) {
         matricula.asignatura_id.forEach(asignaturaId => {
             // Incrementamos el contador de la asignatura
@@ -22,26 +30,61 @@ listaMatriculas.forEach(matricula => {
         // Incrementamos el contador de la asignatura
         repeticionesAsignaturas[matricula.asignatura_id] = (repeticionesAsignaturas[matricula.asignatura_id] || 0) + 1;
     }
-});
+}});
+listaMatriculas.forEach(matricula => {
+    // Verificamos si asignatura_id es un array
+    if(matricula.periodo_id==2){
+    if (Array.isArray(matricula.asignatura_id)) {
+        matricula.asignatura_id.forEach(asignaturaId => {
+            // Incrementamos el contador de la asignatura
+            repeticionesAsignaturas2[asignaturaId] = (repeticionesAsignaturas2[asignaturaId] || 0) + 1;
+        });
+    } else {
+        // Incrementamos el contador de la asignatura
+        repeticionesAsignaturas2[matricula.asignatura_id] = (repeticionesAsignaturas2[matricula.asignatura_id] || 0) + 1;
+    }
+}});
 
 // Mostramos el objeto con la cantidad de veces que aparece cada asignatura
 console.log(repeticionesAsignaturas);
+console.log(repeticionesAsignaturas2);
 let asignaturaMasRepetida = null;
+let asignaturaMasRepetida2 = null;
 let maxRepeticiones = 0;
+let maxRepeticiones2 = 0;
+
 
 for (let asignaturaId in repeticionesAsignaturas) {
     if (repeticionesAsignaturas[asignaturaId] > maxRepeticiones) {
+        
         asignaturaMasRepetida = asignaturaId;
         maxRepeticiones = repeticionesAsignaturas[asignaturaId];
-    }
-    
+           }
+          
 }
+console.log(asignaturaMasRepetida)
+for (let asignaturaId2 in repeticionesAsignaturas2) {
+    if (repeticionesAsignaturas2[asignaturaId2] > maxRepeticiones2) {
+      
+        asignaturaMasRepetida2 = asignaturaId2;
+        maxRepeticiones2 = repeticionesAsignaturas2[asignaturaId2];
+           }
+           
+}
+console.log(asignaturaMasRepetida2)
 console.log(listaAsignaturas[asignaturaMasRepetida-1].codigo);
 informesInput.innerHTML=`
+<div>
 <h1> total recaudado</h1>
-<h1>${valorTotalMatriculas}</h1>
+</div>
+<h1>periodo 1 :$ ${valorTotalMatriculas}</h1>
+
+<h1>periodo 2 :$ ${valorTotalMatriculas1}</h1>
 <h1>  asignatura más matriculada</h1>
-<h1>${listaAsignaturas[asignaturaMasRepetida-1].codigo}</h1>
+<h1>periodo 1 :${listaAsignaturas[asignaturaMasRepetida-1].codigo}</h1>
+<h1>periodo 2 :${listaAsignaturas[asignaturaMasRepetida2-1].codigo}</h1>
+
+
 <div> <select cclass="select" id="cargarEstudiantes1">
 ${cargarEstMat()}
 </select>
@@ -284,11 +327,7 @@ const generarHorario=()=>{
 
    }
    
-   if( Object.keys(matriculaEstudiante).length==0){
-    alert("el usuario no tiene matricula")
-    return
-   }
-   else{
+
     console.log(  (listaMatriculas[matriculaEstudiante-1].asignatura_id).length)
     for (const asignatura of (listaMatriculas[matriculaEstudiante-1].asignatura_id)){
         console.log(asignatura)
@@ -964,6 +1003,3 @@ const generarHorario=()=>{
    }
 
        
-
-
-}

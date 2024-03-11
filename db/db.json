@@ -523,7 +523,7 @@
       "departamento_id": "4"
     },
     {
-      "id": 40,
+      "id": "40",
       "tipo_documento": "CC",
       "numero_documento": "423453434",
       "nombre": "jaime",
@@ -1196,7 +1196,7 @@
       "programa_id": "9"
     },
     {
-      "id": 52,
+      "id": "52",
       "nombre": "juan carlo",
       "apellido": "gomez",
       "tipo_documento": "CC",
@@ -2222,7 +2222,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "curso_id": 57,
       "codigo": "ADM-LID",
       "creditos": 3,
@@ -2245,9 +2245,9 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "curso_id": 58,
-      "codigo": "ADM-FIN_PR20",
+      "codigo": "ADM-FIN_PR",
       "creditos": 4,
       "profesor_id": 20,
       "cupos_disponibles": 25,
@@ -2268,9 +2268,9 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "curso_id": 56,
-      "codigo": "ADM-ECO_PR16",
+      "codigo": "ADM-ECO_PR",
       "creditos": 2,
       "profesor_id": 16,
       "cupos_disponibles": 35,
@@ -2291,9 +2291,9 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "curso_id": 20,
-      "codigo": "PROC-IMG_PR16",
+      "codigo": "PROC-IMG_PR",
       "creditos": 5,
       "profesor_id": 16,
       "cupos_disponibles": 15,
@@ -2310,6 +2310,397 @@
           "hora_inicio": "12:00 m",
           "hora_fin": "2:00 pm",
           "salon_id": "16"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "curso_id": 56,
+      "codigo": "ADM-ECO_PR",
+      "creditos": 3,
+      "profesor_id": 24,
+      "cupos_disponibles": 31,
+      "programa_id": "5",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "10"
+        },
+        {
+          "dia": "miercoles",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "17"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "curso_id": 4,
+      "codigo": "SIS-OP_PR",
+      "creditos": 3,
+      "profesor_id": 16,
+      "cupos_disponibles": 24,
+      "programa_id": "5",
+      "horario_clases": [
+        {
+          "dia": "viernes",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "14"
+        },
+        {
+          "dia": "jueves",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "13"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "curso_id": 31,
+      "codigo": "MUS-INTIA_PR",
+      "creditos": 3,
+      "profesor_id": 12,
+      "cupos_disponibles": 26,
+      "programa_id": "4",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "15"
+        },
+        {
+          "dia": "miercoles",
+          "hora_inicio": "6:00 pm",
+          "hora_fin": "8:00 pm",
+          "salon_id": "18"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "curso_id": 45,
+      "codigo": "CON-ANF_PR",
+      "creditos": 1,
+      "profesor_id": 13,
+      "cupos_disponibles": 21,
+      "programa_id": "4",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "16"
+        },
+        {
+          "dia": "miercoles",
+          "hora_inicio": "4:00 pm",
+          "hora_fin": "6:00 pm",
+          "salon_id": "11"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "curso_id": 37,
+      "codigo": "MUS-CIN_PR",
+      "creditos": 3,
+      "profesor_id": 10,
+      "cupos_disponibles": 29,
+      "programa_id": "4",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "15"
+        },
+        {
+          "dia": "jueves",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "16"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "curso_id": 47,
+      "codigo": "CON-GUB_PR",
+      "creditos": 2,
+      "profesor_id": 21,
+      "cupos_disponibles": 22,
+      "programa_id": "3",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "10:00 am",
+          "hora_fin": "12:00 m",
+          "salon_id": "16"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "17"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "curso_id": 43,
+      "codigo": "CON-IMP_PR",
+      "creditos": 3,
+      "profesor_id": 22,
+      "cupos_disponibles": 31,
+      "programa_id": "2",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "13"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "6:00 pm",
+          "hora_fin": "8:00 pm",
+          "salon_id": "17"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "curso_id": 35,
+      "codigo": "MUS-DER_PR",
+      "creditos": 1,
+      "profesor_id": 21,
+      "cupos_disponibles": 23,
+      "programa_id": "1",
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "17"
+        },
+        {
+          "dia": "jueves",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "18"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "curso_id": 18,
+      "codigo": "DIS-INT-USR_PR",
+      "creditos": 2,
+      "profesor_id": 10,
+      "cupos_disponibles": 34,
+      "programa_id": "2",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "10:00 am",
+          "hora_fin": "12:00 m",
+          "salon_id": "8"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "4:00 pm",
+          "hora_fin": "6:00 pm",
+          "salon_id": "20"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "curso_id": 31,
+      "codigo": "MUS-CIN_PR",
+      "creditos": 2,
+      "profesor_id": 1,
+      "cupos_disponibles": 23,
+      "programa_id": "5",
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "10:00 am",
+          "hora_fin": "12:00 m",
+          "salon_id": "7"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "19"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "curso_id": 9,
+      "codigo": "ANA-ALG_PR",
+      "creditos": 2,
+      "profesor_id": 19,
+      "cupos_disponibles": 28,
+      "programa_id": "2",
+      "horario_clases": [
+        {
+          "dia": "jueves",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "17"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "18"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "curso_id": 41,
+      "codigo": "CON-AVA_PR",
+      "creditos": 2,
+      "profesor_id": 26,
+      "cupos_disponibles": 32,
+      "programa_id": "5",
+      "horario_clases": [
+        {
+          "dia": "jueves",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "15"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "19"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "curso_id": 43,
+      "codigo": "CON-IMP_PR",
+      "creditos": 3,
+      "profesor_id": 7,
+      "cupos_disponibles": 26,
+      "programa_id": "5",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "10:00 am",
+          "hora_fin": "12:00 m",
+          "salon_id": "1"
+        },
+        {
+          "dia": "miercoles",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "1"
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "curso_id": 11,
+      "codigo": "ING-SOF_PR",
+      "creditos": 3,
+      "profesor_id": 1,
+      "cupos_disponibles": 20,
+      "programa_id": "3",
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "1"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "16"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "curso_id": 23,
+      "codigo": "INT-ROB_PR",
+      "creditos": 1,
+      "profesor_id": 21,
+      "cupos_disponibles": 30,
+      "programa_id": "3",
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "17"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "6:00 pm",
+          "hora_fin": "8:00 pm",
+          "salon_id": "19"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "curso_id": 59,
+      "codigo": "ADM-PLAN_PR",
+      "creditos": 1,
+      "profesor_id": 33,
+      "cupos_disponibles": 23,
+      "programa_id": "2",
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "10"
+        },
+        {
+          "dia": "jueves",
+          "hora_inicio": "8:00 am",
+          "hora_fin": "10:00 am",
+          "salon_id": "17"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "curso_id": 3,
+      "codigo": "INT-ART_PR",
+      "creditos": 1,
+      "profesor_id": 24,
+      "cupos_disponibles": 21,
+      "programa_id": "1",
+      "horario_clases": [
+        {
+          "dia": "jueves",
+          "hora_inicio": "12:00 m",
+          "hora_fin": "2:00 pm",
+          "salon_id": "18"
+        },
+        {
+          "dia": "viernes",
+          "hora_inicio": "6:00 pm",
+          "hora_fin": "8:00 pm",
+          "salon_id": "10"
         }
       ]
     }
@@ -2386,6 +2777,145 @@
       ],
       "periodo_id": "1",
       "precio": 12400
+    },
+    {
+      "id": 8,
+      "estudiante_id": 3,
+      "asignatura_id": [
+        1,
+        14,
+        18,
+        27,
+        19
+      ],
+      "periodo_id": "1",
+      "precio": 18100
+    },
+    {
+      "id": 9,
+      "estudiante_id": 6,
+      "asignatura_id": [
+        1,
+        13,
+        19,
+        30
+      ],
+      "periodo_id": "2",
+      "precio": 18200
+    },
+    {
+      "id": 10,
+      "estudiante_id": 2,
+      "asignatura_id": [
+        11,
+        16,
+        18,
+        26,
+        30
+      ],
+      "periodo_id": "2",
+      "precio": 26800
+    },
+    {
+      "id": 11,
+      "estudiante_id": 10,
+      "asignatura_id": [
+        1,
+        13,
+        10,
+        17,
+        29
+      ],
+      "periodo_id": "2",
+      "precio": 23300
+    },
+    {
+      "id": 12,
+      "estudiante_id": 11,
+      "asignatura_id": [
+        12,
+        11,
+        13,
+        14,
+        21
+      ],
+      "periodo_id": "1",
+      "precio": 18100
+    },
+    {
+      "id": 13,
+      "estudiante_id": 13,
+      "asignatura_id": [
+        10,
+        15,
+        9,
+        28
+      ],
+      "periodo_id": "1",
+      "precio": 18700
+    },
+    {
+      "id": 14,
+      "estudiante_id": 14,
+      "asignatura_id": [
+        8,
+        15,
+        16,
+        29,
+        30
+      ],
+      "periodo_id": "1",
+      "precio": 17000
+    },
+    {
+      "id": 15,
+      "estudiante_id": 15,
+      "asignatura_id": [
+        3,
+        5,
+        6,
+        7,
+        12
+      ],
+      "periodo_id": "1",
+      "precio": 15800
+    },
+    {
+      "id": 16,
+      "estudiante_id": 12,
+      "asignatura_id": [
+        14,
+        17,
+        28
+      ],
+      "periodo_id": "1",
+      "precio": 6700
+    },
+    {
+      "id": 17,
+      "estudiante_id": 17,
+      "asignatura_id": [
+        15,
+        26,
+        20,
+        21,
+        13
+      ],
+      "periodo_id": "1",
+      "precio": 15900
+    },
+    {
+      "id": 18,
+      "estudiante_id": 16,
+      "asignatura_id": [
+        18,
+        28,
+        21,
+        8,
+        29
+      ],
+      "periodo_id": "1",
+      "precio": 14000
     }
   ]
 }

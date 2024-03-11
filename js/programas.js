@@ -22,6 +22,7 @@ const cargarProgramas = () => {
     let tamProgamas = listaProgramas.length;
     console.log(tamProgamas);
     programasInput.innerHTML = `
+    <H1>Programas
     <div class="table-responsive">
     <table  class="table table-hover">
       <thead>

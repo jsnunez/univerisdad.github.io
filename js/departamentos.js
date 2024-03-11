@@ -22,6 +22,7 @@ const cargarDepartamentos = () => {
     let tamProgamas = listaDepartamentos.length;
     console.log(tamProgamas);
     departamentosInput.innerHTML = `
+    <H1>Departamentos
     <div class="table-responsive">
     <table  class="table">
       <thead>
