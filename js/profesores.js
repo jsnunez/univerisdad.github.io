@@ -139,3 +139,14 @@ const generarOptionsDocentesR = () => {
     return options;
 
 }
+const limpiarDocente=()=>{
+    let nombrePInput = document.getElementById("nombreProfesor");
+    let apellidoPInput = document.getElementById("apellidoProfesor");
+    let tiPInput = document.getElementById("tipoIdentificacionP");
+    let numIdentiPInput = document.getElementById("numIdentiP");
+    let departamentoIdInput = document.getElementById("departamentoID");
+    nombrePInput.value="";
+    apellidoPInput.value=""
+     numIdentiPInput.value=""
+  
+}

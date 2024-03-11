@@ -62,15 +62,15 @@ const paginaInciciosesion = () => {
          <img src="img/fondo.png" alt="login image" class="login__img">
 
          <form action="" class="login__form">
-            <h1 class="login__title">Login</h1>
+            <h1 class="login__title">Universidad de los sabios</h1>
 
             <div class="login__content">
                <div class="login__box">
                   <p><i class="fa fa-user"></i></p>
 
                   <div class="login__box-input">
-                     <input type="email" required class="login__input" id="login-email" >
-                     <label for="login-email" class="login__label">Email</label>
+                     <input type="text" required class="login__input" id="login-email" >
+                     <label for="login-email" class="login__label"><h2>user</label>
                   </div>
                </div>
 
@@ -78,7 +78,7 @@ const paginaInciciosesion = () => {
                  <p> <i class="fa fa-key"></i></p>
                         <div class="login__box-input">
                      <input type="password" required class="login__input" id="login-pass" >
-                     <label for="login-pass" class="login__label">Password</label>
+                     <label for="login-pass" class="login__label"><h2>Password</label>
                      <i class="ri-eye-off-line login__eye" id="login-eye"></i>
                   </div>
                </div>

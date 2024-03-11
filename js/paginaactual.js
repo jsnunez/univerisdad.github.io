@@ -208,6 +208,8 @@ const irAsignaturas = () => {
   cargarProAsig();
   cargarProfeAsig();
   cargarCursosAsig();
+  agregarHorario()
+  agregarHorario()
   console.log("hola")
 
 }

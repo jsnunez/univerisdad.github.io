@@ -12,181 +12,236 @@
 </head>
 
 <body>
-    <div id="matricula">
-        <section class="h-100 bg-dark">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col">
-                        <div class="card card-registration my-4">
-                            <div class="row g-0">
-                                <div class="col-xl-12 d-none d-xl-block">
-                                    <div>
-                                        <H1>Total del matriculas recaudada por periodo académico</H1>
-                                        <div  class="col-xl-12 d-none d-xl-block"></div>
-                                            <label class="form-label" for="codigoUnico">Periodo</label>
+    <div class="journal-content-article " data-analytics-asset-id="829912" data-analytics-asset-title="INSTITUCIONAL - TEXTO - CIFRAS" data-analytics-asset-type="web-content">
+	
 
-                                            <select cclass="select" id="cargarPeriodo">
-                                                ${cargarPeriodo()}
-                                            </select>
-
-                                        </div>
-
-                                    </div>
-                                    <div>
-
-                                    </div>
-
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="card-body p-md-5 text-black">
-                                        <h3 class="mb-5 text-uppercase">Formulario inscripcion Matriculas</h3>
-
-                                        <div class="row">
-                                            <button type="button" class="btn btn-light btn-lg">cargar datos</button>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <label class="form-label" for="codigoUnico">Estudiantes</label>
-
-                                                    <div> <select cclass="select" id="cargarEstudiantes">
-                                                            ${cargarEstMat()}
-                                                        </select>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="form-outline">
-                                                    <div class="form-outline">
-                                                        <label class="form-label" for="codigoUnico">Periodo</label>
-
-                                                        <div>
-                                                            <select cclass="select" id="cargarPeriodo">
-                                                                ${cargarPeriodo()}
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12 mb-4">
-                                                <label class="form-label" for="codigoUnico">asignatura</label>
-
-                                                <div>
-                                                    <select cclass="select" id="cargarAsignatura"
-                                                        onclick=cargarHorarioM()>
-                                                        ${cargarAsignatua()}
-                                                    </select>
-
-                                                </div>
-                                                <div class="col-md-12 mb-4" id="cargarHorario">
-
-                                                    <table>
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>
-                                                                        <h5>dia
-                                                                    </th>
-                                                                    <th>
-                                                                        <h5>HoraInicio
-                                                                    </th>
-                                                                    <th>
-                                                                        <h5>HoraFin
-                                                                    </th>
-                                                                    <th>
-                                                                        <h5>SAlon
-                                                                    </th>
-
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody id="tabladias">
-
-
-                                                            </tbody>
-
-
-
-                                                        </table>
-                                                    </table>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 d-none d-xl-block">
-                                    <div class="col-md-12 mb-6">
-                                        <table>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>
-                                                            <h5>id
-                                                        </th>
-                                                        <th>
-                                                            <h5>nombre
-                                                        </th>
-                                                        <th>
-                                                            <h5>creditos
-                                                        </th>
-                                                        <th>
-                                                            <h5>periodo
-                                                        </th>
-                                                        <th>
-                                                            <h5>precio
-                                                        </th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tablaAsignatura">
-
-
-                                                </tbody>
-
-
-
-                                            </table>
-                                        </table>
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <div class="row" id="total">
-
-
-                                </div>
-
-                                <div class="row" id="asignatura1">
-<h1></h1>
-                                    <button onclick="agregarAsignatura()">agregar Asignatura</button>
-                                </div>
-                                <div class="row">
-
-                                    <div class="d-flex justify-content-end pt-3">
-                                        <button type="button" class="btn btn-light btn-lg">Reset
-                                            all</button>
-                                        <button type="button" class="btn btn-warning btn-lg ms-2"
-                                            onclick=enviarDatosAsignaturas()>Submit
-                                            form</button>
-                                    </div>
-
-                                </div>
-                            </div>
-
+        <!-------------------------------------- CIFRAS ---------------------------------------------->
+    
+    <!--<div class="dircom-pw-cifras-titulo">La Javeriana en cifras</div>-->
+    <br>
+    <div class="dircom-pw-cifras-contenido-cifras">
+                       <a href="" target="_blank" id="GA4-Clic-cifra">
+                    <div class="dircom-pw-cifras-contenido-cifras-contenedor col_fourth ">
+                        <div class="dircom-pw-cifras-icono">
+                                 <img src="/recursosdb/813229/830148/mundo.png/ddc1f709-8d99-8f3a-b0f8-fe46cbeaddf8?t=1604696029248" title="Ranking internacional <br />Time Higher Education <br />Posición Colombia" alt="Ranking internacional <br />Time Higher Education <br />Posición Colombia">
                         </div>
-
+                        <h2 class="timer dircom-pw-cifras-cifra dircom-pw-count-number " data-to="2" data-speed="1500 ">2</h2>
+                        <p class="dircom-pw-cifras-texto-cifra">
+                            Ranking internacional <br>Time Higher Education <br>Posición Colombia
+                        </p>
                     </div>
-                </div>
-        </section>
+                </a>
+                   <a href="" target="_blank" id="GA4-Clic-cifra">
+                    <div class="dircom-pw-cifras-contenido-cifras-contenedor col_fourth ">
+                        <div class="dircom-pw-cifras-icono">
+                                 <img src="/recursosdb/813229/830148/icono-maestrias.png/1813d0aa-6182-5de1-a82e-9278b0424e92?t=1604696074956" title="Programas de pregrado <br />con acreditación institucional <br />de alta calidad" alt="Programas de pregrado <br />con acreditación institucional <br />de alta calidad">
+                        </div>
+                        <h2 class="timer dircom-pw-cifras-cifra dircom-pw-count-number " data-to="35" data-speed="1500 ">35</h2>
+                        <p class="dircom-pw-cifras-texto-cifra">
+                            Programas de pregrado <br>con acreditación institucional <br>de alta calidad
+                        </p>
+                    </div>
+                </a>
+                   <a href="" target="_blank" id="GA4-Clic-cifra">
+                    <div class="dircom-pw-cifras-contenido-cifras-contenedor col_fourth ">
+                        <div class="dircom-pw-cifras-icono">
+                                 <img src="/recursosdb/813229/830148/icono-carreras.png/1482a484-3c39-2e96-eeb4-5e8cf99304f1?t=1604696097825" title="Programas de posgrado<br />con acreditación institucional <br />de alta calidad" alt="Programas de posgrado<br />con acreditación institucional <br />de alta calidad">
+                        </div>
+                        <h2 class="timer dircom-pw-cifras-cifra dircom-pw-count-number " data-to="47" data-speed="1500 ">47</h2>
+                        <p class="dircom-pw-cifras-texto-cifra">
+                            Programas de posgrado<br>con acreditación institucional <br>de alta calidad
+                        </p>
+                    </div>
+                </a>
+                   <a href="" target="_blank" id="GA4-Clic-cifra">
+                    <div class="dircom-pw-cifras-contenido-cifras-contenedor col_fourth ">
+                        <div class="dircom-pw-cifras-icono">
+                                 <img src="/recursosdb/813229/830148/ico_edificios.png/2a7f5838-1f7f-a5c4-fc90-9c58417ce403?t=1604696122195" title="Convenios de<br /> internacionalización<br /> Formalizados durante 2022" alt="Convenios de<br /> internacionalización<br /> Formalizados durante 2022">
+                        </div>
+                        <h2 class="timer dircom-pw-cifras-cifra dircom-pw-count-number " data-to="42" data-speed="1500 ">42</h2>
+                        <p class="dircom-pw-cifras-texto-cifra">
+                            Convenios de<br> internacionalización<br> Formalizados durante 2022
+                        </p>
+                    </div>
+                </a>
+                   <a href="" target="_blank" id="GA4-Clic-cifra">
+                    <div class="dircom-pw-cifras-contenido-cifras-contenedor col_fourth ">
+                        <div class="dircom-pw-cifras-icono">
+                                 <img src="/recursosdb/813229/830148/ico_grupos-investigacion.png/411b2528-be3c-d681-eadb-22ce18ffe36f?t=1604696137006" title="Grupos de investigación <br />reconocidos por Colciencias <br /> Convocatoria 833 de 2018" alt="Grupos de investigación <br />reconocidos por Colciencias <br /> Convocatoria 833 de 2018">
+                        </div>
+                        <h2 class="timer dircom-pw-cifras-cifra dircom-pw-count-number " data-to="108" data-speed="1500 ">108</h2>
+                        <p class="dircom-pw-cifras-texto-cifra">
+                            Grupos de investigación <br>reconocidos por Colciencias <br> Convocatoria 833 de 2018
+                        </p>
+                    </div>
+                </a>
+    </div>
+    
+    <!----------------- Script ----------------------->
+    
+    <script src="/recursosdb/20129/601893/js-cifras.js"></script>
+    
+    <!-------------------------------------- FIN CIFRAS ---------------------------------------------->
+    
+    <style>
+        @font-face {
+            font-family: HelveticaLight;
+            src: url(https://intranet.javeriana.edu.co/recursosdb/20129/601890/Helvetica-Light.ttf)
+        }
+        
+        @font-face {
+            font-family: HelveticaLightOblique;
+            src: url(https://intranet.javeriana.edu.co/recursosdb/20129/601890/Helvetica-LightOblique.ttf)
+        }
+        
+        @font-face {
+            font-family: HelveticaBold;
+            src: url(https://intranet.javeriana.edu.co/recursosdb/20129/601890/Helvetica-Bold.ttf)
+        }
+        /* --------------------------------------- 10. CIFRAS  --------------------------------------------*/
+        /* Column Grids */
+        
+        .dircom-pw-cifras-contenido-cifras .col_half {
+            width: 49%;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .col_third {
+            width: 32%;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .col_fourth {
+            width: 100%;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .col_fifth {
+            width: 18.4%;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .col_sixth {
+            width: 15%;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .col_three_fourth {
+            width: 74.5%;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .col_twothird {
+            width: 66%;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .col_half,
+        .dircom-pw-cifras-contenido-cifras .col_third,
+        .dircom-pw-cifras-contenido-cifras .col_twothird,
+        .dircom-pw-cifras-contenido-cifras .col_fourth,
+        .dircom-pw-cifras-contenido-cifras .col_three_fourth,
+        .dircom-pw-cifras-contenido-cifras .col_fifth {
+            position: relative;
+            display: inline;
+            display: inline-block;
+            float: left;
+            margin-right: 2%;
+            margin-bottom: 20px;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras .end {
+            margin-right: 0 !important;
+        }
+        /* Column Grids End */
+        
+        .dircom-pw-cifras-titulo {
+            width: 100%x;
+            max-width: 1240px;
+            margin: 0 auto;
+            font-family: HelveticaLight;
+            color: #494949;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras {
+            width: 100%x;
+            max-width: 1240px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .dircom-pw-cifras-icono {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .dircom-pw-cifras-icono img {
+            width: 70px;
+        }
+        
+        .dircom-pw-cifras-contenido-cifras-contenedor {
+            background-color: #ffffff;
+            padding: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .dircom-pw-cifras-cifra {
+            font-size: 40px;
+            font-weight: normal;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-align: center;
+            color: #e3b82a;
+            font-family: HelveticaBold;
+        }
+        
+        .dircom-pw-cifras-texto-cifra {
+            font-size: 1rem;
+            font-weight: normal;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-align: center;
+            font-family: HelveticaLight;
+            color: #494949;
+        }
+        
+        .dircom-pw-cifras-texto-cifra a {
+            text-decoration: none;
+            color: #494949;
+        }
+        
+        .dircom-pw-cifras-texto-cifra a:hover {
+            text-decoration: underline;
+            font-family: HelveticaBold;
+        }
+        /*------ Responsive --------*/
+        
+        @media(max-width: 600px) {
+            .dircom-pw-cifras-contenido-cifras .col_fourth {
+                /*width: 23.5%;*/
+                width: 100%;
+            }
+            .dircom-pw-cifras-contenido-cifras {
+                width: 100%x;
+                margin: 0 auto;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .dircom-pw-cifras-contenido-cifras a {
+                color: #007bff;
+                text-decoration: none;
+                background-color: transparent;
+                width: 45%;
+                display: flex;
+                justify-content: center;
+            }
+            
+        }
+    </style>
+    </div>
 </body>
 
 </html>

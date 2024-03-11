@@ -1,0 +1,503 @@
+ for (const matricula of listaMatriculas){
+        console.log( matricula.estudiante_id)
+        console.log(  if(parseInt(matricula.estudiante_id)==estudianteHorario.value){
+         asignaturaEstudiante=matricula.asignatura_id;
+         
+        }
+        if(t)
+console.log(Object.keys(asignaturaEstudiante).length)
+         for(i=0;i<Object.keys(asignaturaEstudiante).length;i++){
+
+            console.log("horario "+listaAsignaturas[matricula.asignatura_id[0]].horario_clases[0].dia);
+            console.log("horario "+listaAsignaturas[matricula.asignatura_id].horario_clases[0].hora_inicio);
+    let dia1=listaAsignaturas[matricula.asignatura_id[i]].horario_clases[0].dia;
+    let hora1=listaAsignaturas[matricula.asignatura_id[i]].horario_clases[0].hora_inicio;
+    let dia2=listaAsignaturas[matricula.asignatura_id[i]].horario_clases[1].dia;
+    let hora2=listaAsignaturas[matricula.asignatura_id[i]].horario_clases[1].hora_inicio;
+    let asignatura1="";
+    let asignatura2="";
+
+    console.log(hora1)
+    console.log(dia2)
+    console.log(hora2)
+    if(dia1=="lunes"){
+        
+
+        if("6:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("l1")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 am"==hora1)
+        {
+            const horario1 = document.getElementById("l2")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("10:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("l3")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("12:00 m"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("l4")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("2:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("l5")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("4:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("l6")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("6:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("l7")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("l8")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+  }
+    if(dia1=="martes"){
+        if("6:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("m1")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 am"==hora1)
+        {
+            const horario1 = document.getElementById("m2")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("10:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("m3")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("12:00 m"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("m4")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("2:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("m5")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("4:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("m6")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("6:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("m7")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("m8")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+          }
+    if(dia1=="miercoles"){
+        if("6:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("mi1")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 am"==hora1)
+        {
+            const horario1 = document.getElementById("mi2")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("10:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("mi3")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("12:00 m"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("mi4")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("2:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("mi5")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("4:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("mi6")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("6:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("mi7")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("mi8")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+            }
+    if(dia1=="jueves"){
+        if("6:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("j1")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 am"==hora1)
+        {
+            const horario1 = document.getElementById("j2")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("10:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("j3")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("12:00 m"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("j4")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("2:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("j5")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("4:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("j6")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("6:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("j7")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("j8")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+           }
+    if(dia1=="viernes"){
+        if("6:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("v1")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 am"==hora1)
+        {
+            const horario1 = document.getElementById("v2")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("10:00 am"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("v3")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("12:00 m"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("v4")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("2:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("v5")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("4:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("v6")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("6:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("v7")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+        if("8:00 pm"==hora1)
+        {
+            console.log(dia1)
+            const horario1 = document.getElementById("v8")
+            
+            console.log(horario1)
+            horario1.innerHTML="hola"
+        }
+    }
+
+
+    //horario 2
+//     if(dia2=="lunes"){
+        
+
+//         if("6:00 am"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("11")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("8:00 am"==hora2)
+//         {
+//             const horario1 = document.getElementById("12")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("10:00 am"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("l3")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("12:00 m"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("l4")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("2:00 pm"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("l5")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("4:00 pm"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("l6")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("6:00 pm"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("l7")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("8:00 pm"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("l8")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//   }
+//     if(dia1=="martes"){
+//         if("6:00 am"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("11")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("8:00 am"==hora2)
+//         {
+//             const horario1 = document.getElementById("12")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("10:00 am"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("m3")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("12:00 m"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("m4")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("2:00 pm"==hora2)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("m5")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("4:00 pm"==hora1)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("m6")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("6:00 pm"==hora1)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("m7")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//         if("8:00 pm"==hora1)
+//         {
+//             console.log(dia1)
+//             const horario1 = document.getElementById("m8")
+            
+//             console.log(horario1)
+//             horario1.innerHTML="hola"
+//         }
+//           }
+//     if(dia1=="miercoles"){
+
+//             }
+//     if(dia1=="jueves"){
+
+//            }
+//     if(dia1=="viernes"){
+
+//     }
+   
+ 
+    
+
+   
+        }
+        console.log("asignaturas "+asignaturaEstudiante)
+        console.log( Object.keys(asignaturaEstudiante).length)
+
+    }

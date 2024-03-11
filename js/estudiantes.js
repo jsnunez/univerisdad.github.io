@@ -112,3 +112,21 @@ const generarOptionsEstudiantes = () => {
     return options;
 
 }
+const limpiarEstudiante=()=>{
+    let nombreInput = document.getElementById("nombreEstudiante");
+    let apellidoInput = document.getElementById("apellidoEstudiante");
+    let tiInput = document.getElementById("tipoIdentificacion");
+    let numIdentiInput = document.getElementById("numIdenti");
+    let direccionInput = document.getElementById("direccion");
+    let ciudadInput = document.getElementById("ciudad");
+    let telefonoInput = document.getElementById("telefono");
+    let generoInput = document.getElementById("genero");
+    
+    nombreInput.value="";
+    apellidoInput.value="";
+    numIdentiInput.value="";
+    direccionInput.value="";
+    ciudadInput.value="";
+    telefonoInput.value="";
+    generoInput.value="Masculino"
+}

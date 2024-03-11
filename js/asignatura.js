@@ -1,7 +1,7 @@
 const ProgramaIdAInput = document.getElementById('ProgramaIdA');
 const profesorIdAInput = document.getElementById('profesores');
 const cursosIdAInput = document.getElementById('cursoId');
-
+let ValorProfe=0;
 
 let listaAsignaturas = []
 const loadAsignaturas = async () => {
@@ -28,6 +28,7 @@ const cargarProAsig = async () => {
         options += `<option value="${programas.id}">${programas.nombre}</option> `
     }
     ProgramaIdAInput.innerHTML = options
+
 }
 const cargarProfeAsig = () => {
 
@@ -78,6 +79,7 @@ const enviarDatosAsignaturas = () => {
     let datacupos = cuposInput.value;
     let dataProgramaIdA = ProgramaIdAInput.value;
     let datacurso = cursoIdInput.value;
+    ValorProfe=dataprofesores;
     const horarios = [];
     const horariosInputs = document.querySelectorAll('.horario');
     let bandera = 0;
@@ -268,7 +270,8 @@ const salonHorarioPrograma = () => {
 const generarCodigo = () => {
     let cursoIdInput = document.getElementById("cursoId");
     let codIdInput = document.getElementById("codigoUnico");
-    const oracion = listaCursos[cursoIdInput.value - 1].codigo + "-PER-2024";
+    let profeInput = document.getElementById("profesores");
+    const oracion = listaCursos[cursoIdInput.value - 1].codigo + "_PR"+ profeInput.value;
     codIdInput.value = oracion
 
     console.log(oracion);

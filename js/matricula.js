@@ -294,7 +294,7 @@ if(banderaExisteEstudiante!=1){
 const ingresarMatricula = () => {
     const cargarMatricula = document.getElementById('matricula');
     cargarMatricula.innerHTML =
-        ` <section class="h-100 bg-dark">
+        ` <section class="h-100 ">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col">
@@ -443,10 +443,9 @@ const ingresarMatricula = () => {
                         <div class="row">
 
                             <div class="d-flex justify-content-end pt-3">
-                                <button type="button" class="btn btn-light btn-lg">Reset
-                                    all</button>
+                                <button type="button" class="btn btn-light btn-lg"  onclick="location.reload()">Reiniciar</button>
                                 <button type="button" class="btn btn-warning btn-lg ms-2"
-                                    onclick=enviarDatosMatricula()>realizar inscripcion</button>
+                                    onclick=enviarDatosMatricula()>Realizar Inscripcion</button>
                             </div>
 
                         </div>

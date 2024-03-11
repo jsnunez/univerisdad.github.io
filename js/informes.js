@@ -52,81 +52,918 @@ ${cargarEstMat()}
 </div>
 <div id="horarioEstudiante"> 
 
-</div>
-`
 
-}
+<table  class="table ">
+<thead>
+<tr>
+<th><h2>HORARIO</th>
+    <th><h2>LUNES</th>
+    <th><h2>MARTES</th>
+    <th><h2>MIERCOLES</th>
+    <th><h2>JUEVES</th>
+    <th><h2>VIERNES</th>
+</tr>
+</thead>
+<tbody id="tablaHorarioEstudiante">
 
-const generarHorario=()=>{
-    const horarioInput = document.getElementById('horarioEstudiante');
-    
-console.log(listaMatriculas[2].asignatura_id)
-    horarioInput.innerHTML=  
-    `
-    <table  class="table">
-    <thead>
-          <tr>
-              <th><h2>LUNES</th>
-              <th><h2>MARTES</th>
-              <th><h2>MIERCOLES</th>
-              <th><h2>JUEVES</th>
-              <th><h2>VIERNES</th>
-          </tr>
-      </thead>
-      <tbody id="tablaHorarioEstudiante">
-      
-     ${generarOptionsHorarios()}
+<tr>
 
-      </tbody>
-     
+<td> 6:00am - 8:00am</td>
+<td id="l1">------</td>
+<td id="m1">------</td>
+<td id="mi1">------</td>
+<td id="j1">------</td>         
+<td id="v1">------</td>
+
+</tr>
+
+
+<tr>
+<td>8:00am - 10:00am</td>
+<td id="l2">------</td>
+<td id="m2">------</td>
+<td id="mi2">------</td>
+<td id="j2">------</td>         
+<td id="v2">------</td>
+
+</tr>
+
+<tr>
+<td>10:00am - 12:00m</td>
+<td id="l3">------</td>
+<td id="m3">------</td>
+<td id="mi3">------</td>
+<td id="j3">------</td>         
+<td id="v3">------</td>
+
+</tr>
+
+<tr>
+<td>12:00m - 2:00am</td>
+<td id="l4">------</td>
+<td id="m4">------</td>
+<td id="mi4">------</td>
+<td id="j4">------</td>         
+<td id="v4">------</td>
+
+</tr>
+<tr>
+<td>2:00pm - 4:00pm</td>
+<td id="l5">------</td>
+<td id="m5">------</td>
+<td id="mi5">------</td>
+<td id="j5">------</td>         
+<td id="v5">------</td>
+
+</tr>
+
+<tr>
+<td>4:00pm - 6:00pm</td>
+<td id="l6">------</td>
+<td id="m6">------</td>
+<td id="mi6">------</td>
+<td id="j6">------</td>         
+<td id="v6">------</td>
+
+</tr>
+<tr>
+<td>6:00pm - 8:00pm</td>
+<td id="l7">------</td>
+<td id="m7">------</td>
+<td id="mi7">------</td>
+<td id="j7">------</td>         
+<td id="v7">------</td>
+
+</tr>
+<tr>
+<td>8:00pm - 10:00pm</td>
+<td id="l8">------</td>
+<td id="m8">------</td>
+<td id="mi8">------</td>
+<td id="j8">------</td>         
+<td id="v8">------</td>
+
+</tr>
+
+
+</tbody>
+
 
      
   </table>
   </div>
-    `
+`
+
 }
-const generarOptionsHorarios=()=>{
+
+// const generarHorario=()=>{
+//     const horarioInput = document.getElementById('horarioEstudiante');
+    
+// console.log(listaMatriculas[2].asignatura_id)
+//     horarioInput.innerHTML=  
+//     `
+    
+//     `
+// }
+const generarHorario=()=>{
     const estudianteHorario = document.getElementById("cargarEstudiantes1")
-    const tablaHorario = document.getElementById("tablaHorarioEstudiante")
+    const tablaHorario = document.getElementById("horarioEstudiante")
+
+    tablaHorario.innerHTML=`
+    <table  class="table ">
+     <thead>
+<tr>
+<th><h2>HORARIO</th>
+    <th><h2>LUNES</th>
+    <th><h2>MARTES</th>
+    <th><h2>MIERCOLES</th>
+    <th><h2>JUEVES</th>
+    <th><h2>VIERNES</th>
+</tr>
+</thead>
+<tbody id="tablaHorarioEstudiante">
+
+<tr>
+
+<td> 6:00am - 8:00am</td>
+<td id="l1">------</td>
+<td id="m1">------</td>
+<td id="mi1">------</td>
+<td id="j1">------</td>         
+<td id="v1">------</td>
+
+</tr>
+
+
+<tr>
+<td>8:00am - 10:00am</td>
+<td id="l2">------</td>
+<td id="m2">------</td>
+<td id="mi2">------</td>
+<td id="j2">------</td>         
+<td id="v2">------</td>
+
+</tr>
+
+<tr>
+<td>10:00am - 12:00m</td>
+<td id="l3">------</td>
+<td id="m3">------</td>
+<td id="mi3">------</td>
+<td id="j3">------</td>         
+<td id="v3">------</td>
+
+</tr>
+
+<tr>
+<td>12:00m - 2:00am</td>
+<td id="l4">------</td>
+<td id="m4">------</td>
+<td id="mi4">------</td>
+<td id="j4">------</td>         
+<td id="v4">------</td>
+
+</tr>
+<tr>
+<td>2:00pm - 4:00pm</td>
+<td id="l5">------</td>
+<td id="m5">------</td>
+<td id="mi5">------</td>
+<td id="j5">------</td>         
+<td id="v5">------</td>
+
+</tr>
+
+<tr>
+<td>4:00pm - 6:00pm</td>
+<td id="l6">------</td>
+<td id="m6">------</td>
+<td id="mi6">------</td>
+<td id="j6">------</td>         
+<td id="v6">------</td>
+
+</tr>
+<tr>
+<td>6:00pm - 8:00pm</td>
+<td id="l7">------</td>
+<td id="m7">------</td>
+<td id="mi7">------</td>
+<td id="j7">------</td>         
+<td id="v7">------</td>
+
+</tr>
+<tr>
+<td>8:00pm - 10:00pm</td>
+<td id="l8">------</td>
+<td id="m8">------</td>
+<td id="mi8">------</td>
+<td id="j8">------</td>         
+<td id="v8">------</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+`
     console.log(estudianteHorario.value)
-    let asignaturaEstudiante=0
-
+    let matriculaEstudiante=0
+    let banderaEstudianteMatriculado=0
+    let options = '';
     for (const matricula of listaMatriculas){
-
-        if(matricula.estudiante_id==estudianteHorario.value){
-         asignaturaEstudiante=matricula.asignatura_id;
-console.log(Object.keys(asignaturaEstudiante).length)
-         for(i=0;i<Object.keys(asignaturaEstudiante).length;i++){
-            console.log("horario "+listaAsignaturas[matricula.asignatura_id[i]].horario_clases[0].dia)
-            console.log("horario "+listaAsignaturas[matricula.asignatura_id[i]].horario_clases[0].hora_inicio)
-    let dia1=listaAsignaturas[matricula.asignatura_id[i]].horario_clases[0].dia
-    let hora1=listaAsignaturas[matricula.asignatura_id[i]].horario_clases[0].hora_inicio
-  
-    if(dia1=="lunes"){
-        console.log(dia1)
-        tablaHorario.innerHTML="hola"
-    }
-    if(dia1=="martes"){
-        console.log(dia1)
-    }
-    if(dia1=="miercoles"){
-        console.log(dia1)
-    }
-    if(dia1=="jueves"){
-        console.log(dia1)
-    }
-    if(dia1=="viernes"){
-        console.log(dia1)
-    }
-            console.log("horario "+listaAsignaturas[matricula.asignatura_id[i]].horario_clases[1].dia)
-            console.log("horario "+listaAsignaturas[matricula.asignatura_id[i]].horario_clases[1].hora_inicio)
-
-  
-    }
+        console.log( matricula.estudiante_id)
+        if(parseInt(matricula.estudiante_id)==estudianteHorario.value){
+            console.log("holaa")
+            matriculaEstudiante=matricula.id
+        console.log(  matriculaEstudiante)
+        } else{
+            banderaEstudianteMatriculado=1
+         
         }
-        console.log("asignaturas "+asignaturaEstudiante)
-        console.log( Object.keys(asignaturaEstudiante).length)
 
+   }
+   
+   if( Object.keys(matriculaEstudiante).length==0){
+    alert("el usuario no tiene matricula")
+    return
+   }
+   else{
+    console.log(  (listaMatriculas[matriculaEstudiante-1].asignatura_id).length)
+    for (const asignatura of (listaMatriculas[matriculaEstudiante-1].asignatura_id)){
+        console.log(asignatura)
+        let dia1=listaAsignaturas[asignatura-1].horario_clases[0].dia;
+        let hora1=listaAsignaturas[asignatura-1].horario_clases[0].hora_inicio;
+        let dia2=listaAsignaturas[asignatura-1].horario_clases[1].dia;
+        let hora2=listaAsignaturas[asignatura-1].horario_clases[1].hora_inicio;
+        let asignatura1="";
+        let asignatura2="";
+    
+        console.log(listaAsignaturas[asignatura-1].codigo)
+        console.log(hora1)
+        console.log(dia2)
+        console.log(hora2)
+  
+    
+        if(dia1=="lunes"){
+        
+
+            if("6:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("l1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora1)
+            {
+                const horario1 = document.getElementById("l2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("l3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("l4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("l5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("l6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("l7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("l8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+      }
+        if(dia1=="martes"){
+            if("6:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("m1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora1)
+            {
+                const horario1 = document.getElementById("m2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("m3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("m4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("m5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("m6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("m7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("m8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+              }
+        if(dia1=="miercoles"){
+            if("6:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("mi1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora1)
+            {
+                const horario1 = document.getElementById("mi2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("mi3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("mi4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("mi5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("mi6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("mi7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("mi8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+                }
+        if(dia1=="jueves"){
+            if("6:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("j1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora1)
+            {
+                const horario1 = document.getElementById("j2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("j3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("j4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("j5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("j6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("j7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("j8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+               }
+        if(dia1=="viernes"){
+            if("6:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("v1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora1)
+            {
+                const horario1 = document.getElementById("v2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("v3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("v4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("v5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("v6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("v7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora1)
+            {
+                console.log(dia1)
+                const horario1 = document.getElementById("v8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+        }
+        if(dia2=="lunes"){
+        
+
+            if("6:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("l1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora2)
+            {
+                const horario1 = document.getElementById("l2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("l3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("l4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("l5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("l6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("l7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("l8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+      }
+        if(dia2=="martes"){
+            if("6:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("m1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora2)
+            {
+                const horario1 = document.getElementById("m2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("m3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("m4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("m5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("m6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("m7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("m8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+              }
+        if(dia2=="miercoles"){
+            if("6:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("mi1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora2)
+            {
+                const horario1 = document.getElementById("mi2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("mi3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("mi4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("mi5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("mi6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("mi7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("mi8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+                }
+        if(dia2=="jueves"){
+            if("6:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("j1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora2)
+            {
+                const horario1 = document.getElementById("j2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("j3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("j4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("j5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("j6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("j7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("j8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+               }
+        if(dia2=="viernes"){
+            if("6:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("v1")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 am"==hora2)
+            {
+                const horario1 = document.getElementById("v2")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("10:00 am"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("v3")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("12:00 m"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("v4")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("2:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("v5")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("4:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("v6")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("6:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("v7")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+            if("8:00 pm"==hora2)
+            {
+                console.log(dia2)
+                const horario1 = document.getElementById("v8")
+                
+                console.log(horario1)
+                horario1.innerHTML=listaAsignaturas[asignatura-1].codigo
+            }
+        }
     }
+    
+   }
+
+       
+
 
 }

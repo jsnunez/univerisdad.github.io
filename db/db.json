@@ -1377,6 +1377,486 @@
       "nombre": "Computación Cuántica",
       "codigo": "COMP-CUA",
       "guia_catedra": "URL_Guia_CatedraCC.pdf"
+    },
+    {
+      "id": "31",
+      "nombre": "Interpretación Instrumental Avanzada",
+      "codigo": "MUS-INTIA",
+      "guia_catedra": "URL_Guia_CatedraIIA.pdf"
+    },
+    {
+      "id": "32",
+      "nombre": "Arreglos Musicales",
+      "codigo": "MUS-ARR",
+      "guia_catedra": "URL_Guia_CatedraAMus.pdf"
+    },
+    {
+      "id": "33",
+      "nombre": "Pedagogía Musical",
+      "codigo": "MUS-PED",
+      "guia_catedra": "URL_Guia_CatedraPMus.pdf"
+    },
+    {
+      "id": "34",
+      "nombre": "Tecnología en Estudios de Grabación",
+      "codigo": "MUS-TEG",
+      "guia_catedra": "URL_Guia_CatedraTEG.pdf"
+    },
+    {
+      "id": "35",
+      "nombre": "Gestión de Derechos de Autor",
+      "codigo": "MUS-DER",
+      "guia_catedra": "URL_Guia_CatedraDMus.pdf"
+    },
+    {
+      "id": "36",
+      "nombre": "Psicología del Arte y la Creatividad Musical",
+      "codigo": "MUS-PAC",
+      "guia_catedra": "URL_Guia_CatedraPACM.pdf"
+    },
+    {
+      "id": "37",
+      "nombre": "Música y Cine",
+      "codigo": "MUS-CIN",
+      "guia_catedra": "URL_Guia_CatedraMC.pdf"
+    },
+    {
+      "id": "38",
+      "nombre": "Música y Videojuegos",
+      "codigo": "MUS-VJ",
+      "guia_catedra": "URL_Guia_CatedraMVJ.pdf"
+    },
+    {
+      "id": "39",
+      "nombre": "Música y Neurociencia",
+      "codigo": "MUS-NEU",
+      "guia_catedra": "URL_Guia_CatedraMNeu.pdf"
+    },
+    {
+      "id": "40",
+      "nombre": "Producción de Música Electrónica",
+      "codigo": "MUS-ELEC",
+      "guia_catedra": "URL_Guia_CatedraMElec.pdf"
+    },
+    {
+      "id": "41",
+      "nombre": "Contabilidad Avanzada",
+      "codigo": "CON-AVA",
+      "guia_catedra": "URL_Guia_CatedraCA.pdf"
+    },
+    {
+      "id": "42",
+      "nombre": "Finanzas Corporativas",
+      "codigo": "CON-FIN",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "43",
+      "nombre": "Impuestos y Legislación Fiscal",
+      "codigo": "CON-IMP",
+      "guia_catedra": "URL_Guia_CatedraILF.pdf"
+    },
+    {
+      "id": "44",
+      "nombre": "Contabilidad de Costos Avanzada",
+      "codigo": "CON-COSA",
+      "guia_catedra": "URL_Guia_CatedraCCA.pdf"
+    },
+    {
+      "id": "45",
+      "nombre": "Análisis Financiero",
+      "codigo": "CON-ANF",
+      "guia_catedra": "URL_Guia_CatedraAF.pdf"
+    },
+    {
+      "id": "46",
+      "nombre": "Gestión Financiera",
+      "codigo": "CON-GES",
+      "guia_catedra": "URL_Guia_CatedraGF.pdf"
+    },
+    {
+      "id": "47",
+      "nombre": "Contabilidad Gubernamental",
+      "codigo": "CON-GUB",
+      "guia_catedra": "URL_Guia_CatedraCG.pdf"
+    },
+    {
+      "id": "48",
+      "nombre": "Control Interno y Auditoría Interna",
+      "codigo": "CON-CIA",
+      "guia_catedra": "URL_Guia_CatedraCIAI.pdf"
+    },
+    {
+      "id": "49",
+      "nombre": "Ética Profesional en Contaduría",
+      "codigo": "CON-ETI",
+      "guia_catedra": "URL_Guia_CatedraEPC.pdf"
+    },
+    {
+      "id": "50",
+      "nombre": "Seminario de Contaduría",
+      "codigo": "CON-SEM",
+      "guia_catedra": "URL_Guia_CatedraSC.pdf"
+    },
+    {
+      "id": "51",
+      "nombre": "Gestión Estratégica",
+      "codigo": "ADM-GES",
+      "guia_catedra": "URL_Guia_CatedraGE.pdf"
+    },
+    {
+      "id": "52",
+      "nombre": "Marketing Estratégico",
+      "codigo": "ADM-MKT",
+      "guia_catedra": "URL_Guia_CatedraME.pdf"
+    },
+    {
+      "id": "53",
+      "nombre": "Gestión de Recursos Humanos",
+      "codigo": "ADM-RRHH",
+      "guia_catedra": "URL_Guia_CatedraRRHH.pdf"
+    },
+    {
+      "id": "54",
+      "nombre": "Estrategias de Negociación",
+      "codigo": "ADM-NEG",
+      "guia_catedra": "URL_Guia_CatedraEN.pdf"
+    },
+    {
+      "id": "55",
+      "nombre": "Gestión de Operaciones",
+      "codigo": "ADM-OP",
+      "guia_catedra": "URL_Guia_CatedraGO.pdf"
+    },
+    {
+      "id": "56",
+      "nombre": "Economía Empresarial",
+      "codigo": "ADM-ECO",
+      "guia_catedra": "URL_Guia_CatedraEE.pdf"
+    },
+    {
+      "id": "57",
+      "nombre": "Liderazgo Organizacional",
+      "codigo": "ADM-LID",
+      "guia_catedra": "URL_Guia_CatedraLO.pdf"
+    },
+    {
+      "id": "58",
+      "nombre": "Finanzas Corporativas",
+      "codigo": "ADM-FIN",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "59",
+      "nombre": "Planificación Estratégica",
+      "codigo": "ADM-PLAN",
+      "guia_catedra": "URL_Guia_CatedraPE.pdf"
+    },
+    {
+      "id": "60",
+      "nombre": "Innovación y Emprendimiento",
+      "codigo": "ADM-INE",
+      "guia_catedra": "URL_Guia_CatedraIE.pdf"
+    },
+    {
+      "id": "51",
+      "nombre": "Gestión Estratégica",
+      "codigo": "ADM-GES",
+      "guia_catedra": "URL_Guia_CatedraGE.pdf"
+    },
+    {
+      "id": "52",
+      "nombre": "Marketing Estratégico",
+      "codigo": "ADM-MKT",
+      "guia_catedra": "URL_Guia_CatedraME.pdf"
+    },
+    {
+      "id": "53",
+      "nombre": "Gestión de Recursos Humanos",
+      "codigo": "ADM-RRHH",
+      "guia_catedra": "URL_Guia_CatedraRRHH.pdf"
+    },
+    {
+      "id": "54",
+      "nombre": "Estrategias de Negociación",
+      "codigo": "ADM-NEG",
+      "guia_catedra": "URL_Guia_CatedraEN.pdf"
+    },
+    {
+      "id": "55",
+      "nombre": "Gestión de Operaciones",
+      "codigo": "ADM-OP",
+      "guia_catedra": "URL_Guia_CatedraGO.pdf"
+    },
+    {
+      "id": "56",
+      "nombre": "Economía Empresarial",
+      "codigo": "ADM-ECO",
+      "guia_catedra": "URL_Guia_CatedraEE.pdf"
+    },
+    {
+      "id": "57",
+      "nombre": "Liderazgo Organizacional",
+      "codigo": "ADM-LID",
+      "guia_catedra": "URL_Guia_CatedraLO.pdf"
+    },
+    {
+      "id": "58",
+      "nombre": "Finanzas Corporativas",
+      "codigo": "ADM-FIN",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "59",
+      "nombre": "Planificación Estratégica",
+      "codigo": "ADM-PLAN",
+      "guia_catedra": "URL_Guia_CatedraPE.pdf"
+    },
+    {
+      "id": "60",
+      "nombre": "Innovación y Emprendimiento",
+      "codigo": "ADM-INE",
+      "guia_catedra": "URL_Guia_CatedraIE.pdf"
+    },
+    {
+      "id": "51",
+      "nombre": "Gestión Estratégica",
+      "codigo": "ADM-GES",
+      "guia_catedra": "URL_Guia_CatedraGE.pdf"
+    },
+    {
+      "id": "52",
+      "nombre": "Marketing Estratégico",
+      "codigo": "ADM-MKT",
+      "guia_catedra": "URL_Guia_CatedraME.pdf"
+    },
+    {
+      "id": "53",
+      "nombre": "Gestión de Recursos Humanos",
+      "codigo": "ADM-RRHH",
+      "guia_catedra": "URL_Guia_CatedraRRHH.pdf"
+    },
+    {
+      "id": "54",
+      "nombre": "Estrategias de Negociación",
+      "codigo": "ADM-NEG",
+      "guia_catedra": "URL_Guia_CatedraEN.pdf"
+    },
+    {
+      "id": "55",
+      "nombre": "Gestión de Operaciones",
+      "codigo": "ADM-OP",
+      "guia_catedra": "URL_Guia_CatedraGO.pdf"
+    },
+    {
+      "id": "56",
+      "nombre": "Economía Empresarial",
+      "codigo": "ADM-ECO",
+      "guia_catedra": "URL_Guia_CatedraEE.pdf"
+    },
+    {
+      "id": "57",
+      "nombre": "Liderazgo Organizacional",
+      "codigo": "ADM-LID",
+      "guia_catedra": "URL_Guia_CatedraLO.pdf"
+    },
+    {
+      "id": "58",
+      "nombre": "Finanzas Corporativas",
+      "codigo": "ADM-FIN",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "59",
+      "nombre": "Planificación Estratégica",
+      "codigo": "ADM-PLAN",
+      "guia_catedra": "URL_Guia_CatedraPE.pdf"
+    },
+    {
+      "id": "60",
+      "nombre": "Innovación y Emprendimiento",
+      "codigo": "ADM-INE",
+      "guia_catedra": "URL_Guia_CatedraIE.pdf"
+    },
+    {
+      "id": "51",
+      "nombre": "Gestión Estratégica",
+      "codigo": "ADM-GES",
+      "guia_catedra": "URL_Guia_CatedraGE.pdf"
+    },
+    {
+      "id": "52",
+      "nombre": "Marketing Estratégico",
+      "codigo": "ADM-MKT",
+      "guia_catedra": "URL_Guia_CatedraME.pdf"
+    },
+    {
+      "id": "53",
+      "nombre": "Gestión de Recursos Humanos",
+      "codigo": "ADM-RRHH",
+      "guia_catedra": "URL_Guia_CatedraRRHH.pdf"
+    },
+    {
+      "id": "54",
+      "nombre": "Estrategias de Negociación",
+      "codigo": "ADM-NEG",
+      "guia_catedra": "URL_Guia_CatedraEN.pdf"
+    },
+    {
+      "id": "55",
+      "nombre": "Gestión de Operaciones",
+      "codigo": "ADM-OP",
+      "guia_catedra": "URL_Guia_CatedraGO.pdf"
+    },
+    {
+      "id": "56",
+      "nombre": "Economía Empresarial",
+      "codigo": "ADM-ECO",
+      "guia_catedra": "URL_Guia_CatedraEE.pdf"
+    },
+    {
+      "id": "57",
+      "nombre": "Liderazgo Organizacional",
+      "codigo": "ADM-LID",
+      "guia_catedra": "URL_Guia_CatedraLO.pdf"
+    },
+    {
+      "id": "58",
+      "nombre": "Finanzas Corporativas",
+      "codigo": "ADM-FIN",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "59",
+      "nombre": "Planificación Estratégica",
+      "codigo": "ADM-PLAN",
+      "guia_catedra": "URL_Guia_CatedraPE.pdf"
+    },
+    {
+      "id": "60",
+      "nombre": "Innovación y Emprendimiento",
+      "codigo": "ADM-INE",
+      "guia_catedra": "URL_Guia_CatedraIE.pdf"
+    },
+    {
+      "id": "51",
+      "nombre": "Gestión Estratégica",
+      "codigo": "ADM-GES",
+      "guia_catedra": "URL_Guia_CatedraGE.pdf"
+    },
+    {
+      "id": "52",
+      "nombre": "Marketing Estratégico",
+      "codigo": "ADM-MKT",
+      "guia_catedra": "URL_Guia_CatedraME.pdf"
+    },
+    {
+      "id": "53",
+      "nombre": "Gestión de Recursos Humanos",
+      "codigo": "ADM-RRHH",
+      "guia_catedra": "URL_Guia_CatedraRRHH.pdf"
+    },
+    {
+      "id": "54",
+      "nombre": "Estrategias de Negociación",
+      "codigo": "ADM-NEG",
+      "guia_catedra": "URL_Guia_CatedraEN.pdf"
+    },
+    {
+      "id": "55",
+      "nombre": "Gestión de Operaciones",
+      "codigo": "ADM-OP",
+      "guia_catedra": "URL_Guia_CatedraGO.pdf"
+    },
+    {
+      "id": "56",
+      "nombre": "Economía Empresarial",
+      "codigo": "ADM-ECO",
+      "guia_catedra": "URL_Guia_CatedraEE.pdf"
+    },
+    {
+      "id": "57",
+      "nombre": "Liderazgo Organizacional",
+      "codigo": "ADM-LID",
+      "guia_catedra": "URL_Guia_CatedraLO.pdf"
+    },
+    {
+      "id": "58",
+      "nombre": "Finanzas Corporativas",
+      "codigo": "ADM-FIN",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "59",
+      "nombre": "Planificación Estratégica",
+      "codigo": "ADM-PLAN",
+      "guia_catedra": "URL_Guia_CatedraPE.pdf"
+    },
+    {
+      "id": "60",
+      "nombre": "Innovación y Emprendimiento",
+      "codigo": "ADM-INE",
+      "guia_catedra": "URL_Guia_CatedraIE.pdf"
+    },
+    {
+      "id": "51",
+      "nombre": "Gestión Estratégica",
+      "codigo": "ADM-GES",
+      "guia_catedra": "URL_Guia_CatedraGE.pdf"
+    },
+    {
+      "id": "52",
+      "nombre": "Marketing Estratégico",
+      "codigo": "ADM-MKT",
+      "guia_catedra": "URL_Guia_CatedraME.pdf"
+    },
+    {
+      "id": "53",
+      "nombre": "Gestión de Recursos Humanos",
+      "codigo": "ADM-RRHH",
+      "guia_catedra": "URL_Guia_CatedraRRHH.pdf"
+    },
+    {
+      "id": "54",
+      "nombre": "Estrategias de Negociación",
+      "codigo": "ADM-NEG",
+      "guia_catedra": "URL_Guia_CatedraEN.pdf"
+    },
+    {
+      "id": "55",
+      "nombre": "Gestión de Operaciones",
+      "codigo": "ADM-OP",
+      "guia_catedra": "URL_Guia_CatedraGO.pdf"
+    },
+    {
+      "id": "56",
+      "nombre": "Economía Empresarial",
+      "codigo": "ADM-ECO",
+      "guia_catedra": "URL_Guia_CatedraEE.pdf"
+    },
+    {
+      "id": "57",
+      "nombre": "Liderazgo Organizacional",
+      "codigo": "ADM-LID",
+      "guia_catedra": "URL_Guia_CatedraLO.pdf"
+    },
+    {
+      "id": "58",
+      "nombre": "Finanzas Corporativas",
+      "codigo": "ADM-FIN",
+      "guia_catedra": "URL_Guia_CatedraFC.pdf"
+    },
+    {
+      "id": "59",
+      "nombre": "Planificación Estratégica",
+      "codigo": "ADM-PLAN",
+      "guia_catedra": "URL_Guia_CatedraPE.pdf"
+    },
+    {
+      "id": "60",
+      "nombre": "Innovación y Emprendimiento",
+      "codigo": "ADM-INE",
+      "guia_catedra": "URL_Guia_CatedraIE.pdf"
     }
   ],
   "salones": [
@@ -1728,6 +2208,75 @@
           "salon_id": "13"
         }
       ]
+    },
+    {
+      "id": 10,
+      "curso_id": 57,
+      "codigo": "ADM-LID",
+      "creditos": 3,
+      "profesor_id": 39,
+      "cupos_disponibles": 25,
+      "programa_id": "10",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "19"
+        },
+        {
+          "dia": "miercoles",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": "16"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "curso_id": 58,
+      "codigo": "ADM-FIN_PR20",
+      "creditos": 4,
+      "profesor_id": 20,
+      "cupos_disponibles": 25,
+      "programa_id": "9",
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "16"
+        },
+        {
+          "dia": "jueves",
+          "hora_inicio": "4:00 pm",
+          "hora_fin": "6:00 pm",
+          "salon_id": "17"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "curso_id": 56,
+      "codigo": "ADM-ECO_PR16",
+      "creditos": 2,
+      "profesor_id": 16,
+      "cupos_disponibles": 35,
+      "programa_id": "8",
+      "horario_clases": [
+        {
+          "dia": "martes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "8"
+        },
+        {
+          "dia": "jueves",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": "7"
+        }
+      ]
     }
   ],
   "matriculas": [
@@ -1792,7 +2341,7 @@
       "precio": 4000
     },
     {
-      "id": 7,
+      "id": "7",
       "estudiante_id": 21,
       "asignatura_id": [
         1,
