@@ -2916,6 +2916,133 @@
       ],
       "periodo_id": "1",
       "precio": 14000
+    },
+    {
+      "id": 19,
+      "estudiante_id": 19,
+      "asignatura_id": [
+        14,
+        18,
+        28,
+        6
+      ],
+      "periodo_id": "1",
+      "precio": 9300
+    },
+    {
+      "id": 20,
+      "estudiante_id": 37,
+      "asignatura_id": [
+        13,
+        17,
+        27
+      ],
+      "periodo_id": "2",
+      "precio": 15600
+    },
+    {
+      "id": 21,
+      "estudiante_id": 20,
+      "asignatura_id": [
+        13
+      ],
+      "periodo_id": "2",
+      "precio": 9000
+    },
+    {
+      "id": 22,
+      "estudiante_id": 52,
+      "asignatura_id": [
+        5,
+        7,
+        14,
+        19
+      ],
+      "periodo_id": "2",
+      "precio": 19600
+    },
+    {
+      "id": 23,
+      "estudiante_id": 51,
+      "asignatura_id": [
+        19,
+        15,
+        14
+      ],
+      "periodo_id": "2",
+      "precio": 15200
+    },
+    {
+      "id": 24,
+      "estudiante_id": 50,
+      "asignatura_id": [
+        15,
+        11,
+        8,
+        19,
+        29
+      ],
+      "periodo_id": "2",
+      "precio": 27400
+    },
+    {
+      "id": 25,
+      "estudiante_id": 49,
+      "asignatura_id": [
+        13,
+        26,
+        28,
+        15
+      ],
+      "periodo_id": "2",
+      "precio": 22600
+    },
+    {
+      "id": 26,
+      "estudiante_id": 48,
+      "asignatura_id": [
+        19,
+        12,
+        17,
+        7
+      ],
+      "periodo_id": "2",
+      "precio": 17000
+    },
+    {
+      "id": 27,
+      "estudiante_id": 47,
+      "asignatura_id": [
+        19,
+        29,
+        30,
+        9
+      ],
+      "periodo_id": "2",
+      "precio": 14200
+    },
+    {
+      "id": 28,
+      "estudiante_id": 44,
+      "asignatura_id": [
+        30,
+        26,
+        24,
+        13,
+        9
+      ],
+      "periodo_id": "2",
+      "precio": 27400
+    },
+    {
+      "id": 29,
+      "estudiante_id": 38,
+      "asignatura_id": [
+        19,
+        12
+      ],
+      "periodo_id": "2",
+      "precio": 7200
     }
   ]
 }

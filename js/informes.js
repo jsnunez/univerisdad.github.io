@@ -85,12 +85,11 @@ informesInput.innerHTML=`
 <h1>periodo 2 :${listaAsignaturas[asignaturaMasRepetida2-1].codigo}</h1>
 
 
-<div> <select cclass="select" id="cargarEstudiantes1">
+<div> <select cclass="select" id="cargarEstudiantes1" onclick=generarHorario()>>
 ${cargarEstMat()}
 </select>
 <button type="button" class="btn btn-warning btn-lg ms-2"
-    onclick=generarHorario()>Submit
-    form</button>
+    onclick=generarHorario()>cargar</button>
 
 </div>
 <div id="horarioEstudiante"> 

@@ -271,15 +271,15 @@ const generarCodigo = () => {
     let cursoIdInput = document.getElementById("cursoId");
     let codIdInput = document.getElementById("codigoUnico");
     let profeInput = document.getElementById("profesores");
-    document.getElementById("creditos").value=parseInt(Math.random() * (4 - 1) + 1)
-    document.getElementById("cupos").value=parseInt(Math.random() * (35 - 20) + 20)
-    document.getElementById("profesores").value=Math.floor(Math.random() * 40);
-    document.getElementById("ProgramaIdA").value=Math.floor(Math.random() * 5)+1;
-    document.getElementById("cursoId").value=Math.floor(Math.random() * 60);
+    // document.getElementById("creditos").value=parseInt(Math.random() * (4 - 1) + 1)
+    // document.getElementById("cupos").value=parseInt(Math.random() * (35 - 20) + 20)
+    // document.getElementById("profesores").value=Math.floor(Math.random() * 40);
+    // document.getElementById("ProgramaIdA").value=Math.floor(Math.random() * 5)+1;
+    // document.getElementById("cursoId").value=Math.floor(Math.random() * 60);
     
     profeInput = document.getElementById("profesores");
 
-    const oracion = listaCursos[cursoIdInput.value - 1].codigo + "_PR"+ profeInput.value;
+    const oracion = listaCursos[cursoIdInput.value - 1].codigo + "_PR";
     codIdInput.value = oracion
 
 
